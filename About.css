@@ -1,0 +1,225 @@
+*{
+    font-family:'Montserrat', san-serif;
+}
+
+
+body {
+    background-color: powderblue;
+    font-size: 10px;
+    font-family:'Montserrat', san-serif;
+}
+
+h1 {
+    color: rgb(15, 15, 15);
+}
+
+
+
+li {
+    text-align: start;
+    line-height: 1.8em;
+        letter-spacing: 0.05em;
+}
+
+.first {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+hr.vertical {
+    border: 0;
+    border-left: 1px solid black;
+    height: 500px;
+    float: left;
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+
+.clients {
+    padding-top: 70%;
+    padding-left: 30%;
+    font-weight: 100px;
+    font-size: 24px;
+    
+}
+
+.card {
+    width: 60%;
+    height: 45%;
+    border-radius: 10px;
+}
+
+.parallax {
+    width: 100%;
+    height: 600px;
+    background: url('assests/abt.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+hr.verti {
+    border: 0;
+    border-left: 2px solid rgb(65, 64, 64);
+    height: 68%;
+    float: left;
+    margin-top: 10%;
+    margin-bottom: 20%;
+}
+
+.dob {
+    margin:0px;
+    padding-left: 15%;
+}
+
+#ft {
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.35em;
+    
+}
+.btn-dark:hover {
+    background-color: white !important;
+    color: black !important; 
+}
+/* .navbar {
+    padding-bottom: 50px;
+    position: static;
+} */
+/* 
+.Our_journey {
+    line-height: 1.2em;
+    text-align: center;
+    font-size: 64px;
+    margin-top: -470px;
+    font-weight: 400;
+}
+
+.Our_journey1 {
+    line-height: 1.6em;
+    font-weight: 375;
+    text-align: center;
+    font-size: 27px;
+    margin-top: 50px;
+    margin-left: 325px;
+    margin-right: 321px;
+}
+
+hr.vertical {
+    border: 0;
+    border-left: 1px solid black;
+    height: 500px;
+    float: left;
+    margin-left: 100px;
+    margin-top: 150px;
+    margin-down: 50px;
+}
+
+.headd {
+    margin-left: 150px;
+    margin-top: 160px;
+}
+
+.cont {
+    margin-left: 150px;
+    margin-right: 820px;
+    margin-top: -370px;
+    font-weight: 350;
+}
+
+.off {
+    margin-left: 700px;
+    border-radius: 13px;
+}
+
+.cont2 {
+    margin-left: 150px;
+    margin-right: 800px;
+    margin-top: 60px;
+    font-weight: 400;
+}
+
+.cont3 {
+    margin-left: 150px;
+    margin-right: 800px;
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+.alysia {
+    letter-spacing: 0.15em;
+    font-family: montserrat, sans-serif;
+    font-size: 40px;
+}
+
+#alys {
+    padding-top: 170px;
+    padding-right: 100px;
+}
+
+.alycont {
+    padding-top: 80px;
+    padding-left: 120px;
+}
+
+.alyconti {
+    padding-top: 20px;
+    padding-left: 120px;
+}
+
+#thao {
+    padding-top: 60px;
+    padding-left: 400px;
+}
+
+.clients {
+    padding-top: 100px;
+    padding-left: 170px;
+    font-weight: 100;
+    font-size: 32px;
+    font-style: italic;
+}
+
+.card {
+    width: 35rem;
+    height: 16rem;
+    border-radius: 10px;
+}
+
+hr.verti {
+    border: 0;
+    border-left: 1px solid rgb(238, 236, 236);
+    height: 230px;
+    float: left;
+    margin-left: 50px;
+    margin-top: -70px;
+    margin-down: 50px;
+}
+
+.News {
+    margin-left: 100px;
+    margin-top: -30px;
+    color: white;
+    letter-spacing: 0.08em;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.headline {
+    margin-left: 100px;
+    margin-top: 20px;
+    color: white;
+    letter-spacing: 0.08em;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+#hello .col {
+    margin-left: -20px;
+}
+
+#hii {
+    gap: 10px;
+    padding-left: 5%;
+} */

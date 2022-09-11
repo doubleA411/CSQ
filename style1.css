@@ -1,0 +1,987 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: mt;
+    src: url(fonts/Montserrat-Regular.ttf);
+    font-style: normal;
+    font-weight: 100;
+}
+
+
+body {
+    font-family: mt;
+}
+
+.bg {
+    background-size: cover;
+    background-image: url(images/bg.jpg);
+    height: 800px;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.header .mid {
+    width: 80%;
+    height: 100%;
+
+}
+
+.header .mid .logo {
+    width: 40%;
+    float: left;
+    text-align: center;
+    overflow: hidden;
+
+}
+
+.header .mid .logo img {
+    width: 200px;
+}
+
+.header .mid .menu {
+    width: 60%;
+    float: right;
+
+}
+
+.header .mid .menu ul {
+    list-style: none;
+    line-height: 5;
+    text-align: right;
+}
+
+.header .mid .menu ul li {
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 12px;
+}
+
+.header .mid .menu ul li a {
+    transition: .3s;
+    color: rgb(112, 112, 112);
+    text-decoration: none;
+    text-align: right;
+}
+
+.header .mid .menu ul li a:hover {
+    color: #C45308;
+}
+li {
+    text-align: start;
+    line-height: 1.8em;
+        letter-spacing: 0.05em;
+}
+.header .mid .menu ul li button {
+    font-size: 12px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background: black;
+}
+
+.header .mid .menu ul li button a {
+    color: #fff !important;
+}
+
+/* mid1 */
+
+.mid1 {
+    width: 100%;
+    height: 720px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+
+}
+
+.mid1 .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    background-image: linear-gradient(#0000008c 30%, black 70%);
+}
+
+.mid1 .text {
+    width: 60%;
+    height: 25%;
+    text-align: center;
+    margin: 4%;
+}
+
+.mid1 .text span {
+    letter-spacing: 5px;
+    font-weight: 100;
+    line-height: 1.5;
+    font-size: 35px;
+}
+
+.mid1 .text p {
+    font-size: 20px;
+    margin-top: 3%;
+    line-height: 1.5;
+    letter-spacing: 2px;
+}
+
+/* mid2 */
+
+.mid2 {
+    width: 100%;
+    height: 600px;
+    background-color: black;
+    padding-top: 100px;
+    overflow: hidden;
+}
+
+.mid2 .left {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.mid2 .left .do {
+    width: 60%;
+    height: 72%;
+    color: white;
+    padding-left: 10%;
+    margin-left: 30%;
+    border-left: 1px solid white;
+}
+
+.mid2 .left .do span {
+    font-size: 12px;
+    margin-bottom: 10%;
+    display: block;
+}
+
+.mid2 .left .do h6 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 2;
+    font-weight: 100;
+}
+
+.mid2 .left .do p {
+    font-size: 14px;
+    margin-top: 20px;
+    display: block;
+    line-height: 1.8;
+}
+
+.mid2 .right {
+    width: 50%;
+    height: 100%;
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+.mid2 .right img {
+    width: 100%;
+    margin-bottom: 20%;
+}
+
+/* mid3 */
+
+.mid3 {
+    width: 100%;
+    height: 250px;
+}
+
+.mid3 .ser {
+    width: 25%;
+    height: 100%;
+    float: left;
+    position: relative;
+
+}
+
+.mid3 .hsptl {
+    background-color: #1262A6;
+    color: white
+}
+
+.mid3 .sc {
+    background-color: #707070;
+    color: #5DA442
+}
+
+.mid3 .dr {
+    background-color: #EDEDED;
+    color: #5DA442;
+}
+
+.mid3 .spa {
+    background-color: #5DA442;
+    color: white;
+}
+
+.mid3 .ser img {
+    width: 25%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mid3 .ser h6 {
+    display: block;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* mid4 */
+
+.mid4 {
+    width: 100%;
+    height: 300px;
+}
+
+.mid4 .solution {
+    width: 70%;
+    height: 72%;
+    padding-left: 5%;
+    margin-left: 14%;
+    margin-top: 100px;
+    border-left: 1px solid black;
+}
+
+.mid4 .solution span {
+    font-size: 12px;
+    margin-bottom: 50px;
+    display: block;
+}
+
+.mid4 .solution h6 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 2;
+    font-weight: 100;
+}
+
+/* five */
+
+.mid5 {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.mid5 .left {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.mid5 .left .joint {
+    width: 60%;
+    height: 72%;
+    margin-left: 30%;
+    border-left: 1px solid white;
+    margin-top: 10%;
+}
+
+.mid5 .left .joint span {
+    font-size: 40px;
+    letter-spacing: 2px;
+    line-height: 2;
+    font-weight: 100;
+}
+
+.mid5 .left .joint p {
+    font-size: 14px;
+    margin-top: 20px;
+    display: block;
+    line-height: 1.8;
+}
+
+.mid5 .right {
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+.mid5 .right img {
+    height: 100%;
+    width: auto;
+}
+
+button {
+    padding: 5px 10px;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: block;
+}
+
+button a {
+    color: black;
+    text-decoration: none;
+}
+
+button b2 {
+    border-left: 1px solid black;
+    padding-left: 10px;
+    margin-left: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+/* mid6 */
+
+.mid6 {
+    width: 100%;
+    height: 750px;
+    overflow: hidden;
+}
+
+.mid6 .left {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.mid6 .left img {
+    width: 700px;
+    margin-left: 10%;
+}
+
+.mid6 .right {
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+.mid6 .right .care {
+    width: 60%;
+    height: 72%;
+    margin-left: 30%;
+    border-left: 1px solid white;
+    margin-top: 10%;
+}
+
+.mid6 .right .care span {
+    font-size: 40px;
+    letter-spacing: 2px;
+    line-height: 2;
+    font-weight: 100;
+}
+
+.mid6 .right .care p {
+    font-size: 14px;
+    margin-top: 20px;
+    display: block;
+    line-height: 1.8;
+}
+
+/* mid7 */
+
+.mid7 {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.mid7 .left {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.mid7 .left .heal {
+    width: 60%;
+    height: 72%;
+    margin-left: 30%;
+    border-left: 1px solid white;
+}
+
+.mid7 .left .heal span {
+    font-size: 40px;
+    letter-spacing: 2px;
+    line-height: 2;
+    font-weight: 100;
+}
+
+.mid7 .left .heal p {
+    font-size: 14px;
+    margin-top: 20px;
+    display: block;
+    line-height: 1.8;
+}
+
+.mid7 .right {
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+.mid7 .right img {
+    width: 90%;
+    height: auto;
+}
+
+button {
+    padding: 5px 10px;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+button a {
+    color: black;
+    text-decoration: none;
+}
+
+button b2 {
+    border-left: 1px solid black;
+    padding-left: 10px;
+    margin-left: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+/* mid8 */
+
+.mid8 {
+    width: 100%;
+    height: 750px;
+    overflow: hidden;
+}
+
+.mid8 .left {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.mid8 .left img {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 10%;
+}
+
+.mid8 .right {
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+.mid8 .right .sex {
+    width: 60%;
+    height: 72%;
+    margin-left: 30%;
+    border-left: 1px solid white;
+}
+
+.mid8 .right .sex span {
+    font-size: 40px;
+    letter-spacing: 2px;
+    line-height: 2;
+    font-weight: 100;
+}
+
+.mid8 .right .sex p {
+    font-size: 14px;
+    margin-top: 20px;
+    display: block;
+    line-height: 1.8;
+}
+
+.mid8 .right .sex i {
+    font-size: 8px;
+}
+
+
+/* mid9 */
+
+.mid9 {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.mid9 .left {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.mid9 .left .face {
+    width: 60%;
+    height: 72%;
+    margin-left: 30%;
+    border-left: 1px solid white;
+}
+
+.mid9 .left .face span {
+    font-size: 40px;
+    letter-spacing: 2px;
+    line-height: 2;
+    font-weight: 100;
+}
+
+.mid9 .left .face p {
+    font-size: 14px;
+    margin-top: 20px;
+    display: block;
+    line-height: 1.8;
+}
+
+.mid9 .right {
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+.mid9 .right img {
+    width: 90%;
+    height: auto;
+}
+
+button {
+    padding: 5px 10px;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+button a {
+    color: black;
+    text-decoration: none;
+}
+
+button b2 {
+    border-left: 1px solid black;
+    padding-left: 10px;
+    margin-left: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+/* mid10 */
+
+.mid10 {
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
+}
+
+.mid10 .left {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.mid10 .left img {
+    width: 80%;
+}
+
+.mid10 .right {
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+.mid10 .right .eq {
+    width: 60%;
+    height: 72%;
+    margin-left: 30%;
+    border-left: 1px solid white;
+    margin-top: 10%;
+}
+
+.mid10 .right .eq span {
+    font-size: 40px;
+    letter-spacing: 2px;
+    line-height: 2;
+    font-weight: 100;
+}
+
+.mid10 .right .eq p {
+    font-size: 14px;
+    margin-top: 20px;
+    display: block;
+    line-height: 1.8;
+}
+
+/* mid11 */
+
+.mid11{
+    width: 100%;
+    height: 700px;
+    background-image: url(images/fixbg.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid white;
+}
+.mid11 .why{
+    background: black;
+    color: white;
+    padding: 2% 4%;
+    margin-left: 8%;
+    border-radius: 10px;
+    height: 630px;
+}
+
+.mid11 .why p{
+    margin: 30px 0px;
+    line-height: 2;
+    font-size: 12px;
+}
+.mid11 .why h4{
+    font-weight: 100;
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+.mid11 .why button {
+    padding: 5px 10px;
+    margin-top: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: black;
+}
+
+.mid11 .why button a {
+    color: white;
+    text-decoration: none;
+}
+
+.mid11 .bar{
+    overflow: inherit;
+    height: 430px;
+    padding-left: 30px;
+    border-left: 1px solid white;
+}
+
+/* mid12 */
+
+.mid12 {
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
+    background: black;
+}
+
+
+
+.mid12 .left {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.mid12 .right {
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+.mid12 .right img {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.mid12 .left .who {
+    width: 60%;
+    height: 72%;
+    margin-left: 30%;
+    border-left: 1px solid white;
+    margin-top: 10%;
+    padding-left: 30px;
+}
+
+.mid12 .left .who span {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 2;
+    font-weight: 100;
+    color: white;
+}
+
+.mid12 .left .who p {
+    font-size: 14px;
+    margin-top: 20px;
+    display: block;
+    line-height: 1.8;
+    color: white;
+}
+
+/* mid13 */
+
+.mid13 {
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
+    background: black;
+}
+
+
+
+.mid13 .left {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.mid13 .right {
+    width: 50%;
+    height: 100%;
+    float: right;
+/*    background: red;*/
+}
+.mid13 .left .who {
+    width: 60%;
+    height: 72%;
+    margin-left: 30%;
+    border-left: 1px solid white;
+    margin-top: 10%;
+    padding-left: 30px;
+}
+
+.mid13 .left .who span {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 2;
+    font-weight: 100;
+    color: white;
+}
+
+.mid13 .left .who p {
+    font-size: 14px;
+    margin-top: 20px;
+    display: block;
+    line-height: 1.8;
+    color: white;
+    margin-bottom: 10%;
+}
+
+/* mid14 */
+
+.mid14{
+    width: 100%;
+    height: 500px;
+    margin-top: 100px;
+}
+.mid14 .left{
+    width: 50%;
+    float: left;
+}
+.mid14 .left .box{
+    width: 53%;
+    float: right;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.mid14 .left span{
+    font-size: 24px;
+    margin: 5px;
+    color: #8ABD77;
+}
+.mid14 .left p{
+    font-size: 14px;
+}
+.mid14 .right{
+    width: 50%;
+    float: right;
+
+}
+.mid14 .right .grn{
+    width: 60%;
+    padding: 30px;
+    border: 4px solid black;
+    background: #8ABD77;
+}
+.mid14 .right span{
+    line-height: 2px;
+    font-size: 30px;
+    color: white;
+    margin: 30px 0px;
+    display: block;
+}
+.mid14 .right form .input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.mid14 .right form .input-row .input-group{
+    flex-basis: 45%;
+}
+.mid14 .right form .input-row .input-group label{
+    margin-bottom: 6px;
+    display: block;
+    font-size: 14px;
+}
+.mid14 .right form .input-row .input-group input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    padding-bottom: 5px;
+    background-color: #8ABD77;
+}
+.mid14 .right form .input-row .input-group textarea{
+    width: 200%;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #8ABD77;
+}
+.mid14 .right form button{
+    padding: 5px 20px;
+    margin-top: 20px;
+    border-radius: 15px;
+    background: black;
+    color: white;
+}
+
+/* mid15 */
+
+.mid15{
+    width: 100%;
+    height: 500px;
+    background-image: url(images/map.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 100px 0px;
+    position: relative;
+    
+}
+.mid15 .map{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.mid15 .map h1{
+    font-size: 50px;
+    color: black;
+    background: white;
+    width: 40%;
+    padding: 20px 0px;
+    margin: auto;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    
+}
+.mid15 .map h3{
+    font-size: 50px;
+    color: black;
+    background: white;
+    letter-spacing:2px;
+}
+.mid15 .map h4{
+        width: 70%;
+    font-size: 50px;
+    color: black;
+    background: white;
+    margin: auto;
+    letter-spacing:2px;
+}
+.mid15 .map button{
+        margin: auto;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background: black;
+    border-radius: 0px;
+}
+.mid15 .map button a{
+    color: white;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+/* mid16 */
+
+.mid16{
+    width: 100%;
+    height: 400px;
+}
+.mid16 .left{
+    width: 50%;
+    float: left;
+}
+.mid16 .left .oao{
+    width: 60%;
+    margin: 10% auto;
+}
+.mid16 .left .oao p{
+    letter-spacing: 2;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.mid16 .left table tr td {
+    padding-bottom: 20px;
+} 
+.mid16 .right{
+    width: 50%;
+    float: right;
+}
+.mid16 .right .sub{
+    width: 50%;
+    margin: 10% auto;
+}
+.mid16 .right .sub p{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.mid16 .right .sub span{
+    display:block;
+}
+.mid16 .right .sub input{
+    display: inline;
+    height: 30px;
+    width: 250px;
+    border: 1px solid black;
+    border-radius: 5px;
+    
+}
+.mid16 .right .sub input:hover{
+    border: 2px solid black;
+    background: #E8E6E6;
+}
+.mid16 .right .sub button{
+    display: inline;
+    margin-left: -4px;
+    font-size: 13px;
+    padding: 7px 10px;
+    background: black;
+}
+
+.mid16 .right .sub button a{
+    color: white;
+}
+
+.mid16 .right .sub button:hover{
+    background: white;
+}
+
+.mid16 .right .sub button:hover a{
+    color: black;
+}
+
