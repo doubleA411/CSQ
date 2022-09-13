@@ -14,6 +14,319 @@
     display: none;
 }
 
+@media (max-width: 640px) {
+    .header .mid .logo img {
+        width: 150px;
+        margin-top: 10px;
+    }
+
+    .header .mid .menu {
+        width: 100%;
+        float: right;
+
+        display: none;
+    }
+
+    .header .mid .menu ul {
+        list-style: none;
+        line-height: 5;
+        text-align: center;
+        background: black;
+        width: 100%;
+        margin-top: 10px;
+        transition: all .5s ease;
+    }
+
+    .header .mid .menu ul li {
+        display: block;
+        padding: 0 15px;
+        border-bottom: 1px solid white;
+        font-size: 16px;
+    }
+
+    .header .mid .menu ul li a {
+        transition: .3s;
+        color: white;
+        text-decoration: none;
+    }
+
+    .header .mid .menu ul li button {
+        font-size: 12px;
+        padding: 5px 15px;
+        border-radius: 5px;
+        background: white;
+    }
+
+    .header .mid .menu ul li button a {
+        color: black !important;
+    }
+
+    .header .mid .menu ul li button:hover {
+        background: black;
+        border: 1px solid white;
+    }
+
+    .header .mid .menu ul li button:hover a {
+        color: white;
+    }
+
+    .checkbtn {
+        display: block;
+        margin-left: 20px;
+    }
+
+    .checkbtn i {
+        margin: 20px 40px;
+        display: block;
+    }
+
+    #check:checked~.menu {
+        display: block;
+    }
+
+    .mid1 .text span {
+        letter-spacing: 5px;
+        font-weight: 100;
+        line-height: 1.5;
+        font-size: 25px;
+        margin-top: 80px;
+        display: block;
+    }
+
+    .mid1 .text p {
+        font-size: 16px;
+        margin-top: 3%;
+        line-height: 1.5;
+        letter-spacing: 2px;
+    }
+
+    .mid1 .overlay {
+        position: absolute;
+        bottom: 45px;
+        left: 0;
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+        background-image: linear-gradient(#0000008c 30%, black 70%);
+    }
+
+    .mid2 {
+        width: 100%;
+        background-color: black;
+        padding-top: 100px;
+        overflow: hidden;
+    }
+
+    .mid2 {
+        width: 100%;
+        background-color: black;
+        padding-top: 100px;
+        overflow: hidden;
+    }
+
+    .mid2 .left {
+        width: 100%;
+    }
+
+    .mid2 .right {
+        width: 100%;
+    }
+
+    .mid3 {
+        width: 100%;
+        height: 300px;
+    }
+
+    .mid3 .ser {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .mid4 {
+        width: 100%;
+        height: 300px;
+        margin-top: 1000px;
+    }
+
+    .mid5 {
+        width: 100%;
+        height: 600px;
+    }
+
+    .mid5 .left {
+        width: 100%;
+    }
+
+    .mid5 .right {
+        width: 100%;
+    }
+
+    .mid6 .left {
+        width: 100%;
+    }
+
+    .mid6 .right {
+        width: 100%;
+    }
+
+    .mid7 {
+        width: 100%;
+        height: 800px;
+        overflow: hidden;
+    }
+
+    .mid7 .left {
+        width: 100%;
+    }
+
+    .mid7 .right {
+        width: 100%;
+    }
+
+    .mid8 {
+        width: 100%;
+        height: 850px;
+        overflow: hidden;
+    }
+
+    .mid8 .left {
+        width: 100%;
+    }
+
+    .mid8 .right {
+        width: 100%;
+    }
+
+    .mid9 {
+        width: 100%;
+        height: 850px;
+        overflow: hidden;
+    }
+
+    .mid9 .left {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .mid9 .right {
+        width: 100%;
+    }
+
+    .mid10 {
+        width: 100%;
+        height: 800px;
+        overflow: hidden;
+    }
+
+    .mid10 .left {
+        width: 100%;
+    }
+
+    .mid10 .right {
+        width: 100%;
+    }
+
+    .mid12 {
+        width: 100%;
+        height: 700px;
+        overflow: hidden;
+        background: black;
+    }
+
+    .mid12 .left {
+        width: 100%;
+    }
+
+    .mid12 .right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .mid13 {
+        width: 100%;
+        height: 1000px;
+        overflow: hidden;
+        background: black;
+    }
+
+    .mid13 .left {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .mid13 .right {
+        width: 100%;
+    }
+
+    .mid14 {
+        width: 100%;
+        height: 750px;
+    }
+
+    .mid14 .left {
+        width: 100%;
+        height: 290px;
+    }
+
+    .mid14 .right {
+        width: 100%;
+    }
+
+    .mid14 .right .grn {
+        margin-left: 50px;
+    }
+
+    .mid15 .map h1 {
+        font-size: 24px;
+    }
+
+    .mid15 .map h3 {
+        font-size: 22px;
+    }
+
+    .mid15 .map h4 {
+        font-size: 22px;
+    }
+
+    .mid16 {
+        width: 100%;
+        height: 500px;
+    }
+
+    .mid16 .left {
+        width: 100%;
+    }
+
+    .mid16 .right {
+        width: 100%;
+    }
+
+    .mid16 .right .sub input {
+        display: inline;
+        height: 30px;
+        width: 240px;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+
+    .footer .left {
+        width: 100%;
+    }
+
+    .footer .right {
+        width: 100%;
+    }
+
+    .footer .right .link {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+
+
+}
+
 
 .header {
     width: 100%;
