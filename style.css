@@ -1,15 +1,27 @@
 
 
 
-#title{
+.main_titles{
     margin-top: 100px;
-    font-size: 40px;
+    /* font-size: 40px; */
     font-weight: 500;
 }   
 
 
+@media screen and (max-width: 800px) {
+    .main_titles {
+        font-size: 1.5rem !important;
+
+    }
+}
 
 
+@media screen and (min-width: 400px) {
+    .main_titles {
+        font-size: 4rem !important;
+
+    }
+}
 
 #pt{
     font-size:35px ;

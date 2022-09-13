@@ -887,6 +887,22 @@ body {
     color: white;
 }
 
+
+@media screen and (max-width: 800px) {
+    .main_titles {
+        font-size: 24px !important;
+
+    }
+}
+
+
+@media screen and (min-width: 400px) {
+    .main_titles {
+        font-size: 55px !important;
+
+    }
+}
+
 .mid13 .left .who p {
     font-size: 14px;
     margin-top: 20px;

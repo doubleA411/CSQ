@@ -3,7 +3,20 @@
  }
 
 
+@media screen and (max-width: 800px) {
+    p.main_titles {
+        font-size: 1.5rem !important;
+        
+    }
+}
 
+
+@media screen and (min-width: 400px) {
+    p.main_titles {
+        font-size: 4rem !important;
+       
+    }
+}
 
 
 
