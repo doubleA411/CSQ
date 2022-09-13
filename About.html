@@ -8,7 +8,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300italic,300,400,600,600i,900,900i" rel="stylesheet">
-        <link rel="stylesheet" href="style1.css">
+        <!-- <link rel="stylesheet" href="style1.css"> -->
+        <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>
         About
     </title>
@@ -25,24 +32,30 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+ 
 
-
-        <div class="header">
-            <div class="mid">
-                <div class="logo">
-                    <img src="images/logo.jpg" alt="">
-                </div>
-                <div class="menu">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="About.html">About</a></li>
-                        <li><a href="our_model.html">Our Model</a></li>
-                        <li><a href="our_process.html">Our Process</a></li>
-                        <li><button><a href="#mid167">Subscribe</a></button></li>
-                    </ul>
-                </div>
-            </div>
+<nav class="header">
+        <div class="mid">
+          <input type="checkbox" id="check" />
+          <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+          </label>
+          <div class="logo">
+            <img src="images/logo.jpg" alt="" />
+          </div>
+          <div class="menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="About.html">About</a></li>
+              <li><a href="our_model.html">Our Model</a></li>
+              <li><a href="our_process.html">Our Process</a></li>
+              <li>
+                <button><a href="#">Subscribe</a></button>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav> <br><br><br><br><br><br><br>
     <div class="container-fluid first">
 
         <div class="row ">
@@ -439,63 +452,38 @@
         </div>
     </div>
    
-    <!-- <footer class="py-5">
-        <div class="row">
-            <h4 id="ft">
-                CSQ Bio<sup style="font-size: 10px; letter-spacing: 0; font-weight: 600">TM</sup>
-            </h4>
+   <script>
+      {
+        const nav = document.querySelector(".header");
+        let lastsceorllY = window.scrollY;
 
-            <br /><br /><br /><br />
-            <div class="col-lg-2"></div>
+        window.addEventListener("scroll", () => {
+          if (lastsceorllY < window.scrollY) {
+            nav.classList.add("nav--hidden");
+          } else {
+            nav.classList.remove("nav--hidden");
+          }
 
-            <div class="col-lg-1">
-                <ul class="nav flex-column">
-                    <li></li>
-                    <li class="nav-item mb-2">Our Program</li>
-                    <br />
-                    <li class="nav-item mb-2">About</li>
-                    <br /><br />
-                    <li class="nav-item mb-2">Our Process</li>
-                </ul>
-            </div>
-            <div class="col-lg-2">
-                <ul class="nav flex-column">
-                    <li></li>
-                    <li class="nav-item mb-2">Tel:844-583-0951</li>
-                    <br />
-                    <li class="nav-item mb-2">Email:info@csqbio.com</li>
-                    <br /><br />
-                    <li class="nav-item mb-2">
-                        10869 N. Scottsdale Rd #103-222 Scottsdale, AZ 85254
-                    </li>
-                </ul>
-            </div>
-            <div class="col-lg-3"></div>
-            <div class="col-lg-2">
-                <form>
-                    <h5>SUBSCRIBE</h5>
-                    <br />
-                    <p style="
-                    letter-spacing: 0.05em;
-                    font-size: 16px;
-                    line-height: 1.8em;
-                  ">
-                        Sign up to receive CSQ Bio™ news and updates.
-                    </p>
-                    <div>
-                        <label for="subs">Email*</label> <br />
-                        <br />
-                        <input id="subs" type="text" class="form-control" /> <br />
-                        <button class="btn btn-dark" type="button">Subscribe</button>
-                    </div>
-                </form>
-            </div>
-        </div>
+          lastsceorllY = window.scrollY;
+        });
+      }
+    </script>
+    <script>
+      {
+        const nav = document.querySelector(".header");
+        let lastsceorllY = window.scrollY;
 
-        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-            <p style="padding-left: 330px;">© 2022 by Studio Mini</p>
+        window.addEventListener("scroll", () => {
+          if (lastsceorllY > window.scrollY) {
+            nav.classList.remove("bgcolor");
+          } else {
+            nav.classList.add("bgcolor");
+          }
 
-    </footer>  -->
+          lastsceorllY = window.scrollY;
+        });
+      }
+    </script>
 </body>
 
 </html>
