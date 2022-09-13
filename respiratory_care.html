@@ -41,6 +41,22 @@
         });
       }
     </script>
+    <script>
+      {
+        const nav = document.querySelector(".header");
+        let lastsceorllY = window.scrollY;
+
+        window.addEventListener("scroll", () => {
+          if (lastsceorllY > window.scrollY) {
+            nav.classList.remove("bgcolor");
+          } else {
+            nav.classList.add("bgcolor");
+          }
+
+          lastsceorllY = window.scrollY;
+        });
+      }
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
@@ -67,7 +83,7 @@
             </ul>
           </div>
         </div>
-      </nav>
+      </nav><br><br>
     <div class="container">
       <center>
         <div class="col-12 col-lg-6">

@@ -22,7 +22,7 @@
     />
   </head>
   <body>
-     <script>
+    <script>
       {
         const nav = document.querySelector(".header");
         let lastsceorllY = window.scrollY;
@@ -32,6 +32,22 @@
             nav.classList.add("nav--hidden");
           } else {
             nav.classList.remove("nav--hidden");
+          }
+
+          lastsceorllY = window.scrollY;
+        });
+      }
+    </script>
+    <script>
+      {
+        const nav = document.querySelector(".header");
+        let lastsceorllY = window.scrollY;
+
+        window.addEventListener("scroll", () => {
+          if (lastsceorllY > window.scrollY) {
+            nav.classList.remove("bgcolor");
+          } else {
+            nav.classList.add("bgcolor");
           }
 
           lastsceorllY = window.scrollY;
@@ -64,7 +80,7 @@
             </ul>
           </div>
         </div>
-      </nav>
+      </nav> <br><br>
     <center>
       <div class="container">
         <div class="col-12 col-lg-6">

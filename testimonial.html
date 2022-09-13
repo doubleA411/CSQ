@@ -22,7 +22,7 @@
     />
 </head>
 <body>
-     <script>
+      <script>
       {
         const nav = document.querySelector(".header");
         let lastsceorllY = window.scrollY;
@@ -32,6 +32,22 @@
             nav.classList.add("nav--hidden");
           } else {
             nav.classList.remove("nav--hidden");
+          }
+
+          lastsceorllY = window.scrollY;
+        });
+      }
+    </script>
+    <script>
+      {
+        const nav = document.querySelector(".header");
+        let lastsceorllY = window.scrollY;
+
+        window.addEventListener("scroll", () => {
+          if (lastsceorllY > window.scrollY) {
+            nav.classList.remove("bgcolor");
+          } else {
+            nav.classList.add("bgcolor");
           }
 
           lastsceorllY = window.scrollY;
@@ -50,7 +66,7 @@
             <i class="fas fa-bars"></i>
           </label>
           <div class="logo">
-            <img src="images/logo.jpg" alt="" />
+            <img src="images/logo.jpg" id = "no_change"alt="" />
           </div>
           <div class="menu">
             <ul>
@@ -64,7 +80,7 @@
             </ul>
           </div>
         </div>
-      </nav><br><br>
+      </nav><br><br><br><br>
 
     <div class="container-fluid">
         <div class="row">
