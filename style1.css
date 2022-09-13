@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
 }
 
 @font-face {
@@ -11,9 +12,24 @@
     font-weight: 100;
 }
 
+.checkbtn{
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
 
 body {
     font-family: mt;
+    --nav-height : 80px;
+    
+    padding-top: var (--nav-height);
 }
 
 .bg {
@@ -28,7 +44,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: transparent;
+    position: fixed;
+    transition: transform .9s;
+}
+
+.nav--hidden {
+    transform: translateY(-80px);
+}
+.bgcolor {
+    background: white;
 }
 
 .header .mid {
@@ -77,11 +101,7 @@ body {
 .header .mid .menu ul li a:hover {
     color: #C45308;
 }
-li {
-    text-align: start;
-    line-height: 1.8em;
-        letter-spacing: 0.05em;
-}
+
 .header .mid .menu ul li button {
     font-size: 12px;
     padding: 5px 15px;
@@ -100,7 +120,6 @@ li {
     height: 720px;
     display: flex;
     justify-content: center;
-    position: relative;
 
 
 }
@@ -127,6 +146,8 @@ li {
     font-weight: 100;
     line-height: 1.5;
     font-size: 35px;
+    margin-top: 80px;
+    display: block;
 }
 
 .mid1 .text p {
@@ -140,10 +161,10 @@ li {
 
 .mid2 {
     width: 100%;
-    height: 600px;
     background-color: black;
     padding-top: 100px;
     overflow: hidden;
+    letter-spacing: 0.08em;
 }
 
 .mid2 .left {
@@ -241,7 +262,7 @@ li {
 .mid3 .ser h6 {
     display: block;
     position: absolute;
-    top: 75%;
+    top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-weight: bold;
@@ -253,6 +274,7 @@ li {
 .mid4 {
     width: 100%;
     height: 300px;
+    letter-spacing: 0.08em;
 }
 
 .mid4 .solution {
@@ -282,7 +304,6 @@ li {
 .mid5 {
     width: 100%;
     height: 600px;
-    overflow: hidden;
 }
 
 .mid5 .left {
@@ -324,33 +345,38 @@ li {
     width: auto;
 }
 
-button {
-    padding: 5px 10px;
-    margin-top: 20px;
-    border: 1px solid black;
-    border-radius: 5px;
-    display: block;
+.mid5 .left .joint button{
+    width: 150px;
+    border-radius: 7px;
+    margin-top: 15px;
 }
-
-button a {
-    color: black;
+.mid5 .left .joint button .b1{
+   width: 70%;
+    float: left;
+    padding: 11px 12px;
+}
+.mid5 .left .joint button .b1 a{
     text-decoration: none;
+    color: black;
+}
+.mid5 .left .joint button:hover .b1 {
+    background: black;
+}
+.mid5 .left .joint button:hover .b1 a{
+    color: white;
+}
+.mid5 .left .joint button .b2{
+    width: 30%;
+    float: right;
+    padding: 11px;
+    border-left: 1px solid black;
 }
 
-button b2 {
-    border-left: 1px solid black;
-    padding-left: 10px;
-    margin-left: 10px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-}
 
 /* mid6 */
 
 .mid6 {
     width: 100%;
-    height: 750px;
-    overflow: hidden;
 }
 
 .mid6 .left {
@@ -391,6 +417,32 @@ button b2 {
     display: block;
     line-height: 1.8;
 }
+.mid6 .right .care button{
+    width: 150px;
+    border-radius: 7px;
+    margin-top: 15px;
+}
+.mid6 .right .care button .b1{
+   width: 70%;
+    float: left;
+    padding: 11px 12px;
+}
+.mid6 .right .care button .b1 a{
+    text-decoration: none;
+    color: black;
+}
+.mid6 .right .care button:hover .b1 {
+    background: black;
+}
+.mid6 .right .care button:hover .b1 a{
+    color: white;
+}
+.mid6 .right .care button .b2{
+    width: 30%;
+    float: right;
+    padding: 11px;
+    border-left: 1px solid black;
+}
 
 /* mid7 */
 
@@ -402,7 +454,6 @@ button b2 {
 
 .mid7 .left {
     width: 50%;
-    height: 100%;
     float: left;
 }
 
@@ -438,25 +489,33 @@ button b2 {
     height: auto;
 }
 
-button {
-    padding: 5px 10px;
-    margin-top: 20px;
-    border: 1px solid black;
-    border-radius: 5px;
+.mid7 .left .heal button{
+    width: 150px;
+    border-radius: 7px;
+    margin-top: 15px;
 }
-
-button a {
-    color: black;
+.mid7 .left .heal button .b1{
+   width: 70%;
+    float: left;
+    padding: 11px 12px;
+}
+.mid7 .left .heal button .b1 a{
     text-decoration: none;
+    color: black;
+}
+.mid7 .left .heal button:hover .b1 {
+    background: black;
+}
+.mid7 .left .heal button:hover .b1 a{
+    color: white;
+}
+.mid7 .left .heal button .b2{
+    width: 30%;
+    float: right;
+    padding: 11px;
+    border-left: 1px solid black;
 }
 
-button b2 {
-    border-left: 1px solid black;
-    padding-left: 10px;
-    margin-left: 10px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-}
 
 /* mid8 */
 
@@ -468,19 +527,17 @@ button b2 {
 
 .mid8 .left {
     width: 50%;
-    height: 100%;
     float: left;
 }
 
 .mid8 .left img {
-    width: 60%;
+    width: 55%;
     margin-left: 20%;
     margin-top: 10%;
 }
 
 .mid8 .right {
     width: 50%;
-    height: 100%;
     float: right;
 }
 
@@ -505,10 +562,37 @@ button b2 {
     line-height: 1.8;
 }
 
-.mid8 .right .sex i {
+.mid8 .right .sex .italy {
     font-size: 8px;
 }
 
+.mid8 .right .sex button{
+    width: 150px;
+    border-radius: 7px;
+    margin-top: 15px;
+    display: block;
+}
+.mid8 .right .sex button .b1{
+   width: 70%;
+    float: left;
+    padding: 11px 12px;
+}
+.mid8 .right .sex button .b1 a{
+    text-decoration: none;
+    color: black;
+}
+.mid8 .right .sex button:hover .b1 {
+    background: black;
+}
+.mid8 .right .sex button:hover .b1 a{
+    color: white;
+}
+.mid8 .right .sex button .b2{
+    width: 30%;
+    float: right;
+    padding: 11px;
+    border-left: 1px solid black;
+}
 
 /* mid9 */
 
@@ -520,7 +604,6 @@ button b2 {
 
 .mid9 .left {
     width: 50%;
-    height: 100%;
     float: left;
 }
 
@@ -547,7 +630,6 @@ button b2 {
 
 .mid9 .right {
     width: 50%;
-    height: 100%;
     float: right;
 }
 
@@ -556,25 +638,33 @@ button b2 {
     height: auto;
 }
 
-button {
-    padding: 5px 10px;
-    margin-top: 20px;
-    border: 1px solid black;
-    border-radius: 5px;
+.mid9 .left button{
+    width: 150px;
+    border-radius: 7px;
+    margin-top: 15px;
 }
-
-button a {
-    color: black;
+.mid9 .left  button .b1{
+   width: 70%;
+    float: left;
+    padding: 11px 12px;
+}
+.mid9 .left  button .b1 a{
     text-decoration: none;
+    color: black;
+}
+.mid9 .left  button:hover .b1 {
+    background: black;
+}
+.mid9 .left button:hover .b1 a{
+    color: white;
+}
+.mid9 .left button .b2{
+    width: 30%;
+    float: right;
+    padding: 11px;
+    border-left: 1px solid black;
 }
 
-button b2 {
-    border-left: 1px solid black;
-    padding-left: 10px;
-    margin-left: 10px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-}
 
 /* mid10 */
 
@@ -586,7 +676,6 @@ button b2 {
 
 .mid10 .left {
     width: 50%;
-    height: 100%;
     float: left;
 }
 
@@ -596,7 +685,6 @@ button b2 {
 
 .mid10 .right {
     width: 50%;
-    height: 100%;
     float: right;
 }
 
@@ -622,6 +710,33 @@ button b2 {
     line-height: 1.8;
 }
 
+.mid10 .right .eq button{
+    width: 150px;
+    border-radius: 7px;
+    margin-top: 15px;
+}
+.mid10 .right .eq button .b1{
+   width: 70%;
+    float: left;
+    padding: 11px 12px;
+}
+.mid10 .right .eq button .b1 a{
+    text-decoration: none;
+    color: black;
+}
+.mid10 .right .eq button:hover .b1 {
+    background: black;
+}
+.mid10 .right .eq button:hover .b1 a{
+    color: white;
+}
+.mid10 .right .eq button .b2{
+    width: 30%;
+    float: right;
+    padding: 11px;
+    border-left: 1px solid black;
+}
+
 /* mid11 */
 
 .mid11{
@@ -634,6 +749,7 @@ button b2 {
     display: flex;
     align-items: center;
     border-bottom: 2px solid white;
+    letter-spacing: 0.08em;
 }
 .mid11 .why{
     background: black;
@@ -667,6 +783,14 @@ button b2 {
     color: white;
     text-decoration: none;
 }
+.mid11 .why button:hover {
+    background: white;
+    transition: 0.5 all ease;
+}
+.mid11 .why button:hover a{
+    color: black;
+    transition: 0.5 all ease;
+}
 
 .mid11 .bar{
     overflow: inherit;
@@ -679,7 +803,7 @@ button b2 {
 
 .mid12 {
     width: 100%;
-    height: 420px;
+    height: 700px;
     overflow: hidden;
     background: black;
 }
@@ -688,13 +812,11 @@ button b2 {
 
 .mid12 .left {
     width: 50%;
-    height: 100%;
     float: left;
 }
 
 .mid12 .right {
     width: 50%;
-    height: 100%;
     float: right;
 }
 .mid12 .right img {
@@ -731,7 +853,7 @@ button b2 {
 
 .mid13 {
     width: 100%;
-    height: 420px;
+    height: 620px;
     overflow: hidden;
     background: black;
 }
@@ -740,13 +862,11 @@ button b2 {
 
 .mid13 .left {
     width: 50%;
-    height: 100%;
     float: left;
 }
 
 .mid13 .right {
     width: 50%;
-    height: 100%;
     float: right;
 /*    background: red;*/
 }
@@ -775,6 +895,70 @@ button b2 {
     color: white;
     margin-bottom: 10%;
 }
+
+.mid13 .right .slider{
+    border: 1px solid white;
+    width: 50%;
+    height: 600px;
+    margin: auto;
+    border-radius: 10px;
+    color: white;
+}
+.mid13 .right .slider .slide {
+    margin: auto;
+    padding: 10%;
+}
+.mid13 .right .slider .slide h4{
+    font-weight: normal;
+    margin: 10% 0px;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+.mid13 .right .slider span{
+    font-size: 14px;
+    color: #959595;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+.mid13 .right .slider p{
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 2;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.mid13 .right .slider button{
+    width: 150px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+.mid13 .right .slider button .b1{
+   width: 70%;
+    float: left;
+    padding: 11px 12px;
+    background: black;
+    border: 1px solid white;
+}
+.mid13 .right .slider button .b1 a{
+    text-decoration: none;
+    color: white;
+}
+.mid13 .right .slider button:hover .b1 {
+    background: white;
+}
+.mid13 .right .slider button:hover .b1 a{
+    color: black;
+}
+.mid13 .right .slider button .b2{
+    width: 30%;
+    float: right;
+    padding: 11px;
+    border: 1px solid white;
+    background: black;
+    color: white;
+}
+
 
 /* mid14 */
 
@@ -857,7 +1041,11 @@ button b2 {
     background: black;
     color: white;
 }
-
+.mid14 .right form button:hover{
+    background: white;
+    color: black;
+    transition: 0.5 all ease;
+}
 /* mid15 */
 
 .mid15{
@@ -915,6 +1103,12 @@ button b2 {
     font-size: 18px;
     padding: 5px 10px;
 }
+.mid15 .map button:hover{
+    background: white;
+}
+.mid15 .map button:hover a{
+    color: black;
+}
 
 /* mid16 */
 
@@ -964,10 +1158,11 @@ button b2 {
 .mid16 .right .sub input:hover{
     border: 2px solid black;
     background: #E8E6E6;
+    transition: 0.5 all ease;
 }
 .mid16 .right .sub button{
     display: inline;
-    margin-left: -4px;
+    margin-left: -5px;
     font-size: 13px;
     padding: 7px 10px;
     background: black;
@@ -979,9 +1174,383 @@ button b2 {
 
 .mid16 .right .sub button:hover{
     background: white;
+    transition: 0.5 all ease;
 }
 
 .mid16 .right .sub button:hover a{
     color: black;
+    transition: 0.5 all ease;
 }
+
+/* footer */
+
+.footer{
+    width: 100%;
+    height: 70px;
+}
+
+.footer .left{
+    width: 50%;
+    float: left;
+}
+.footer .left .ft{
+    height: 100%;
+    width: 50%;
+    margin: auto;
+}
+.footer .left a{
+    color: black;
+    line-height: 2;
+}
+.footer .left p{}
+
+.footer .right {
+    width: 50%;
+    float: right;
+} 
+.footer .right .link{
+    width: 30%;
+    float: right;
+}
+
+.footer .right > .link > a > i{
+    color: black;
+    margin: 10px 20px 0px 20px;
+    text-align: left;
+    font-size: 20px;
+    
+}
+
+
+/* slides */
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+
+
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@media (max-width: 640px) {
+  .header .mid  .logo img {
+        width: 150px;
+        margin-top: 10px;
+    }
+    .header .mid .menu {
+    width: 100%;
+    float: right;
+        
+        display: none;
+}
+
+    .header .mid .menu ul {
+    list-style: none;
+    line-height: 5;
+    text-align: center;
+    background: black;
+    width: 100%;
+    margin-top: 10px;
+    transition: all .5s ease;
+}
+    .header .mid .menu ul li {
+    display: block;
+    padding: 0 15px;
+    border-bottom: 1px solid white;
+    font-size: 16px;
+}
+    .header .mid .menu ul li a {
+    transition: .3s;
+    color: white;
+    text-decoration: none;
+}
+    .header .mid .menu ul li button {
+    font-size: 12px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background: white;
+}
+    .header .mid .menu ul li button a {
+    color: black!important;
+}
+    .header .mid .menu ul li button:hover{
+        background: black;
+        border: 1px solid white;
+    }
+    .header .mid .menu ul li button:hover a {
+        color: white;
+    }
+    .checkbtn {
+        display: block;
+        margin-left: 20px;
+    }
+    .checkbtn i {
+        margin: 20px 40px;
+    display: block;
+    }
+    
+    #check:checked ~ .menu {
+        display: block;
+    }
+    .mid1 .text span {
+    letter-spacing: 5px;
+    font-weight: 100;
+    line-height: 1.5;
+    font-size: 25px;
+    margin-top: 80px;
+    display: block;
+}
+    .mid1 .text p {
+    font-size: 16px;
+    margin-top: 3%;
+    line-height: 1.5;
+    letter-spacing: 2px;
+}
+    .mid1 .overlay {
+    position: absolute;
+    bottom: 45px;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    background-image: linear-gradient(#0000008c 30%, black 70%);
+}
+    .mid2 {
+    width: 100%;
+    background-color: black;
+    padding-top: 100px;
+    overflow: hidden;
+}
+    .mid2 {
+    width: 100%;
+    background-color: black;
+    padding-top: 100px;
+    overflow: hidden;
+}
+    .mid2 .left {
+    width: 100%;
+}
+    .mid2 .right {
+    width: 100%;
+}
+   .mid3 {
+    width: 100%;
+    height: 300px;
+} 
+    .mid3 .ser {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+    .mid4 {
+    width: 100%;
+    height: 300px;
+    margin-top: 1000px;
+}
+    .mid5 {
+    width: 100%;
+    height: 600px;
+}
+    .mid5 .left {
+    width: 100%;
+}
+    .mid5 .right {
+    width: 100%;
+}
+    .mid6 .left {
+    width: 100%;
+}
+    .mid6 .right {
+    width: 100%;
+}
+    .mid7 {
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+}
+    
+    .mid7 .left {
+    width: 100%;
+}
+    .mid7 .right {
+    width: 100%;
+}
+    .mid8 {
+    width: 100%;
+    height: 850px;
+    overflow: hidden;
+}
+    .mid8 .left {
+    width: 100%;
+}
+    .mid8 .right {
+    width: 100%;
+}
+    .mid9 {
+    width: 100%;
+    height: 850px;
+    overflow: hidden;
+}
+    .mid9 .left {
+    width: 100%;
+    margin-bottom: 20px;
+}
+    .mid9 .right {
+    width: 100%;
+}
+    .mid10 {
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+}
+    .mid10 .left {
+    width: 100%;
+}
+    .mid10 .right {
+    width: 100%;
+}
+    .mid12 {
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    background: black;
+}
+    .mid12 .left {
+    width: 100%;
+}
+    .mid12 .right {
+    width: 100%;
+    text-align: center;
+}
+    .mid13 {
+    width: 100%;
+    height: 1000px;
+    overflow: hidden;
+    background: black;
+}
+    .mid13 .left {
+    margin-bottom: 20px;
+    width: 100%;
+}
+    .mid13 .right {
+    width: 100%;
+}
+    .mid14 {
+    width: 100%;
+    height: 750px;
+}
+    .mid14 .left {
+    width: 100%;
+    height: 290px;
+}
+    .mid14 .right {
+    width: 100%;
+}
+    .mid14 .right .grn {
+    margin-left: 50px;
+}
+    
+    .mid15 .map h1 {
+    font-size: 24px;
+}
+    .mid15 .map h3 {
+    font-size: 22px;
+}
+    .mid15 .map h4 {
+    font-size: 22px;
+}
+    
+    .mid16 {
+    width: 100%;
+    height: 500px;
+}
+    .mid16 .left {
+    width: 100%;
+}
+    .mid16 .right {
+    width: 100%;
+}
+    .mid16 .right .sub input {
+    display: inline;
+    height: 30px;
+    width: 240px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+    .footer .left {
+    width: 100%;
+}
+    .footer .right {
+    width: 100%;
+}
+    
+    .footer .right .link {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+}
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
