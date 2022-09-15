@@ -58,19 +58,19 @@
       </nav> <br><br><br><br><br><br><br>
     <div class="container-fluid first">
 
-        <div class="row ">
         
 
 
 
             <div class="col-lg-12 col-sm-12 text_first"
-                style="background-image: url('assests/bac.webp') ;background-repeat: no-repeat;">
+                style="background-image: url('img/bg.png') ;background-repeat: no-repeat;">
                 <div class="text-center">
-                    <p style="line-height: 1.2em; font-weight: 400;" class="main_titles">OUR JOURNEY
+                    <p style="line-height: 1.2em; font-weight: 400; letter-spacing: 0.08rem;" class="main_titles">OUR JOURNEY
                     </p>
                     <br>
-                    <p class="about" style="padding: 0px 20% ; line-height: 1.6em;
-    font-weight: 375;">Founded in 2017, CSQ Bio™ was created with a single
+                    <p class="about" style=" line-height: 1.6em; 
+                        letter-spacing: 0.08rem;
+                        font-weight: 500;">Founded in 2017, CSQ Bio™ was created with a single
                         purpose, to make
                         cutting-edge regenerative
                         treatments accessible to
@@ -82,7 +82,7 @@
             </div>
 
 
-        </div>
+        
     </div>
 
         
@@ -183,7 +183,7 @@
                     application, their ingredients, and the effects on skin, over 20 years ago then deciding to combine
                     her passions for biology.<br /><br />Thao is loved equally by her 1500 students and clients
                     throughout the nation.
-                <ul>
+                <ul class="list">
                     <li>Philosophy focused on the aging skin</li>
                     <li>Licensed Aesthetician</li>
                     <li>Licensed Cosmetologist</li>
@@ -455,14 +455,18 @@
    
    <script>
       {
+        const menu = document.querySelector(".menu");
         const nav = document.querySelector(".header");
         let lastsceorllY = window.scrollY;
 
         window.addEventListener("scroll", () => {
           if (lastsceorllY < window.scrollY) {
             nav.classList.add("nav--hidden");
+            menu.classList.add("nav--hidden");
           } else {
             nav.classList.remove("nav--hidden");
+            menu.classList.remove("nav--hidden");
+
           }
 
           lastsceorllY = window.scrollY;
@@ -484,6 +488,11 @@
           lastsceorllY = window.scrollY;
         });
       }
+    </script>
+    <script>
+       
+        
+         
     </script>
 </body>
 

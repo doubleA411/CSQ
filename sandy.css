@@ -62,12 +62,17 @@
      letter-spacing: 0.35em;
      padding-left: 335px;
  }
-
- li {
+li button {
+        
+            text-align: start;
+            line-height: 1.8em;
+            letter-spacing: 0.05em;
+        
+} /* li {
     text-align: start;
     line-height: 1.8em;
-        letter-spacing: 0.05em;
-}
+    letter-spacing: 0.05em;
+} */
 
  /* #we {
     padding-left: 200px;

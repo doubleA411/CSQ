@@ -45,7 +45,11 @@
     line-height: 1.8em;
     letter-spacing: 0.05em; 
 }
-
+li button {
+    text-align: start;
+    line-height: 1.8em;
+    letter-spacing: 0.05em;
+}
 #para2{
     text-align: start;
     color: white;
@@ -54,10 +58,10 @@
     
 }
 
-li {
+.sx li {
     text-align: start;
     line-height: 1.8em;
-        letter-spacing: 0.05em;
+    letter-spacing: 0.05em;
 }
 
 

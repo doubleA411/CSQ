@@ -39,6 +39,7 @@
 @media screen and (max-width: 800px) {
     .about {
         font-size: 1rem !important;
+        padding: 25px 10%;
 
     }
 }
@@ -46,7 +47,8 @@
 
 @media screen and (min-width: 400px) {
     .about {
-        font-size: 2rem !important;
+        font-size: 24px !important;
+        padding: 50px 30%;
 
     }
 }
@@ -64,10 +66,15 @@ h1 {
 
 
 
-li {
+.list li {
     text-align: start;
     line-height: 1.8em;
-        letter-spacing: 0.05em;
+    letter-spacing: 0.05em;
+}
+li button {
+    text-align: start;
+    line-height: 1.8em;
+    letter-spacing: 0.05em;
 }
 
 .first {
