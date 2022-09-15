@@ -6,8 +6,11 @@
 }
 
 img{
+    position:relative;
+    z-index: -1;
     border-radius: 50%;
     filter: grayscale(100%);
+
 }
 #no_change{
     filter: none;
