@@ -7,6 +7,7 @@
     font-weight: 500;
 }   
 
+/* ----------------------------------------- */
 
 @media screen and (max-width: 800px) {
     .main_titles {
@@ -19,6 +20,36 @@
 @media screen and (min-width: 400px) {
     .main_titles {
         font-size: 4rem !important;
+
+    }
+}
+
+/* ----------------------------------------- */
+
+@media screen and (min-width: 800px) {
+    .red {
+        width: 700px;
+    } 
+}
+
+
+@media screen and (max-width: 400px) {
+    .red {
+         width: 100%;
+
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .main-img {
+        width: 400px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .main-img {
+        width: 100%;
 
     }
 }
