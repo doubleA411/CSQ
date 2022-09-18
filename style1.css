@@ -343,7 +343,16 @@ body {
     width: 50%;
     height: 100%;
     float: right;
+    margin-top: 0px;
+    /* margin-top: 65px; */
 }
+
+@media screen and (max-width:420px) {
+    .mid5 .right {
+        margin-top: 70px !important;
+    }
+}
+
 
 .mid5 .right img {
     height: 100%;
