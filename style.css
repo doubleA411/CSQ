@@ -17,7 +17,7 @@
 }
 
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 450px) {
     .main_titles {
         font-size: 4rem !important;
 
@@ -33,7 +33,7 @@
 }
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .red {
          width: 100%;
 
@@ -47,7 +47,7 @@
 }
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .main-img {
         width: 100%;
 

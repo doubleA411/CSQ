@@ -347,7 +347,7 @@ body {
     /* margin-top: 65px; */
 }
 
-@media screen and (max-width:420px) {
+@media screen and (max-width:450px) {
     .mid5 .right {
         margin-top: 70px !important;
     }
@@ -910,7 +910,7 @@ body {
 }
 
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 450px) {
     .main_titles {
         font-size: 45px !important;
 
@@ -1570,7 +1570,7 @@ img {vertical-align: middle;}
 }
 
 
-@media screen and (max-width:420px){
+@media screen and (max-width:450px){
 
     .mid14 {
         width: 100%;
@@ -1605,7 +1605,7 @@ img {vertical-align: middle;}
     }
 } */
 
-@media screen and (max-width:420px) {
+@media screen and (max-width:450px) {
     .car-text {
         font-size: 9px !important;
     }
