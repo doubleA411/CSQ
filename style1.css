@@ -12,7 +12,14 @@
     font-weight: 100;
 }
 
-
+/* video */
+.background-video {
+    position: absolute; right: 0; left: 0; bottom: 0; z-index: -1;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    width: 100%;
+}
 
 .checkbtn{
     font-size: 30px;
@@ -34,11 +41,7 @@ body {
     padding-top: var (--nav-height);
 }
 
-.bg {
-    background-size: cover;
-    background-image: url(images/bg.jpg);
-    height: 800px;
-}
+
 
 .header {
     width: 100%;
