@@ -52,7 +52,18 @@
      padding: 15%;
  }
 
+ @media screen and (max-width:450px) {
+     .red-image {
+         padding: 0px !important;
+         width: 100%;
+     }
+ }
 
+  @media screen and (max-width:450px) {
+      .cards {
+          padding-right: 0px !important;
+      }
+  }
  @media screen and (max-width:450px) {
     .card {
         width: 100% !important;
