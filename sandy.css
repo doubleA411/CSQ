@@ -52,6 +52,13 @@
      padding: 15%;
  }
 
+
+ @media screen and (max-width:450px) {
+    .card {
+        width: 100% !important;
+    }
+ }
+
  h5 {
      text-align: start;
  }
