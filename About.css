@@ -137,7 +137,7 @@ hr.vertical {
 @media screen and (min-width:640px) {
     .t1 {
         margin-left : 2%;
-        margin-top: 50px;
+        margin-top:8%;
     }
 }
 
@@ -150,8 +150,8 @@ hr.vertical {
 
 @media screen and (min-width:640px) {
     .a1 {
-        margin-left: 10%;
-        margin-top: 100px;
+        margin-left: 7%;
+        margin-top: 8%;
     }
 }
 
