@@ -57,12 +57,12 @@
     
 }
 
-@media screen and (max-width:1366px) {
+@media screen and (max-width:1600px) {
     .np{
-        margin-left: 100px !important;
+        margin-left: 400px !important;
     }
     .shari{
-        margin-left: 400px !important;
+        margin-left: 100px !important;
     }
     .chuck {
         margin-left: 100px !important;
@@ -188,7 +188,7 @@ hr.vertical {
     }
 } */
 
-@media screen and (max-width:1366px) {
+@media screen and (max-width:1600px) {
     .mag {
         margin-left: 50px !important;
     }
