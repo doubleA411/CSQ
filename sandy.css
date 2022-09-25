@@ -111,3 +111,10 @@ li button {
         margin-left: 20px !important ;
     }
  }
+
+ @media screen and (max-width:480px) {
+    .red-image{
+        width: 100% !important;
+        height: 100% !important;
+    }
+ }
