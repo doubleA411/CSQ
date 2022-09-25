@@ -49,7 +49,7 @@
  .card-body {
      background-color: black;
      border-radius: 30px;
-     padding: 15%;
+     padding: 14%;
  }
 
  @media screen and (max-width:450px) {
@@ -101,4 +101,13 @@ li button {
  #red {
 
     padding-left:60px ;
+ }
+
+
+ @media screen and (max-width: 1600px) {
+    .red-image {
+        width: 725px !important;
+        height: 530px !important;
+        margin-left: 20px !important ;
+    }
  }
