@@ -659,6 +659,7 @@ body {
 .mid9 .right img {
     width: 90%;
     height: auto;
+    margin-left: 30px;
 }
 
 .mid9 .left button{
