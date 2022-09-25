@@ -217,6 +217,7 @@ body {
 .mid2 .right img {
     width: 100%;
     margin-bottom: 20%;
+    margin-top: -8rem;
 }
 
 /* mid3 */
@@ -336,6 +337,7 @@ body {
     margin-top: 20px;
     display: block;
     line-height: 1.8;
+    font-size: unset;
 }
 
 .mid5 .right {
@@ -396,6 +398,7 @@ body {
     width: 50%;
     height: 100%;
     float: left;
+    margin-top: 4rem;
 }
 
 .mid6 .left img {
@@ -407,6 +410,7 @@ body {
     width: 50%;
     height: 100%;
     float: right;
+    margin-top: 4rem;
 }
 
 .mid6 .right .care {
@@ -429,6 +433,7 @@ body {
     margin-top: 20px;
     display: block;
     line-height: 1.8;
+    font-size: unset;
 }
 .mid6 .right .care button{
     width: 150px;
@@ -468,6 +473,7 @@ body {
 .mid7 .left {
     width: 50%;
     float: left;
+    margin-top: 4rem;
 }
 
 .mid7 .left .heal {
@@ -489,6 +495,7 @@ body {
     margin-top: 20px;
     display: block;
     line-height: 1.8;
+    font-size: unset;
 }
 
 .mid7 .right {
@@ -500,6 +507,7 @@ body {
 .mid7 .right img {
     width: 90%;
     height: auto;
+    margin-top: 4rem;
 }
 
 .mid7 .left .heal button{
@@ -573,6 +581,7 @@ body {
     margin-top: 20px;
     display: block;
     line-height: 1.8;
+    font-size: unset;
 }
 
 .mid8 .right .sex .italy {
@@ -639,6 +648,7 @@ body {
     margin-top: 20px;
     display: block;
     line-height: 1.8;
+    font-size: unset;
 }
 
 .mid9 .right {
@@ -683,7 +693,7 @@ body {
 
 .mid10 {
     width: 100%;
-    height: 420px;
+    height: 600px;
     overflow: hidden;
 }
 
@@ -693,7 +703,8 @@ body {
 }
 
 .mid10 .left img {
-    width: 80%;
+    width: 781px;
+    height: 675px;
 }
 
 .mid10 .right {
@@ -833,7 +844,7 @@ body {
     float: right;
 }
 .mid12 .right img {
-    width: 80%;
+    width: 100%;
     margin-left: 10%;
 }
 
@@ -1131,6 +1142,7 @@ body {
     color: white;
     font-size: 18px;
     padding: 5px 10px;
+    text-decoration: none;
 }
 .mid15 .map button:hover{
     background: white;
@@ -1155,15 +1167,18 @@ body {
 }
 .mid16 .left .oao{
     width: 60%;
-    margin: 10% auto;
+    margin: 1rem auto;
 }
 .mid16 .left .oao p{
-    letter-spacing: 2;
-    margin-bottom: 30px;
-    font-weight: bold;
+    margin-bottom: 90px;
+    margin-top: 4rem;
+    letter-spacing: 0.35em;
+    font-weight: 600;
+    font-size: x-large;
 }
+
 .mid16 .left table tr td {
-    padding-bottom: 20px;
+    padding-bottom: 50px;
 } 
 .mid16 .right{
     width: 50%;
@@ -1171,14 +1186,20 @@ body {
 }
 .mid16 .right .sub{
     width: 50%;
-    margin: 10% auto;
+    /* margin: 10% auto; */
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: auto; */
+    padding-top: 180px;
+    font-weight: 300;
 }
 .mid16 .right .sub p{
     font-size: 24px;
-    margin-bottom: 10px;
+    margin-bottom: 60px;
 }
 .mid16 .right .sub span{
     display:block;
+    padding-bottom: 30px;
 }
 .mid16 .right .sub input{
     display: inline;
@@ -1225,7 +1246,6 @@ body {
 
 .footer .left{
     width: 50%;
-    float: left;
 }
 .footer .left .ft{
     height: 100%;
@@ -1234,14 +1254,16 @@ body {
 }
 .footer .left a{
     color: black;
-    line-height: 2;
+    line-height: 4;
 }
 
 
 .footer .right {
     width: 50%;
     float: right;
+    padding-bottom: 1.5rem;
 } 
+
 .footer .right .link{
     width: 30%;
     float: right;
