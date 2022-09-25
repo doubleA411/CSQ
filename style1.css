@@ -844,7 +844,7 @@ body {
     float: right;
 }
 .mid12 .right img {
-    width: 100%;
+    width: 600px;
     margin-left: 10%;
 }
 
@@ -912,7 +912,7 @@ body {
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 450px) {
     .main_titles {
         font-size: 24px !important;
 
@@ -920,10 +920,12 @@ body {
 }
 
 
-@media screen and (min-width: 450px) {
-    .main_titles {
-        font-size: 64px !important;
 
+
+@media screen and (max-width: 800px) {
+    .mid10 .left img {
+        height: 300px !important;
+        width: 400px;
     }
 }
 
@@ -1447,7 +1449,7 @@ img {vertical-align: middle;}
 }
     .mid5 {
     width: 100%;
-    height: 600px;
+    height: 800px;
 }
     .mid5 .left {
     width: 100%;
@@ -1509,10 +1511,11 @@ img {vertical-align: middle;}
 }
     .mid12 {
     width: 100%;
-    height: 700px;
+    height: 900px;
     overflow: hidden;
     background: black;
 }
+
     .mid12 .left {
     width: 100%;
 }
@@ -1520,6 +1523,11 @@ img {vertical-align: middle;}
     width: 100%;
     text-align: center;
 }
+
+    .mid12 .right img{
+        margin: 0;
+        width: 100%;
+    }
     .mid13 {
     width: 100%;
     height: 1000px;
@@ -1540,6 +1548,7 @@ img {vertical-align: middle;}
     .mid14 .left {
     width: 100%;
     height: 290px;
+
 }
     .mid14 .right {
     width: 100%;
@@ -1597,21 +1606,27 @@ img {vertical-align: middle;}
     .mid14 {
         width: 100%;
         height: 750px;
+        margin-left: 0px;
 
     }
         .mid14 .left {
         width: 57%;
         height: 50%;
         position: relative;
+        margin-left: 30px;
     }
         .mid14 .right {
         /* margin-left: 50%; */
         align-items: center;
         width: 100%;
         height: 50%;
-        position: static;
-        
+        position: static; 
     }
+
+    .mid14 .right .grn{
+        margin-left: 80px;
+    }
+
     .mid15 {
         width: 100%;
         height: 750px;

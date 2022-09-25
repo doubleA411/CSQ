@@ -286,3 +286,19 @@ h5 {
         padding-right: 100 !important;
     }
 }
+
+
+@media screen and (max-width : 480px) {
+    .tc {
+        padding-left: 20px !important;
+        padding-right:  20px !important;
+        font-size: 10px;
+    }
+
+    .tc b {
+        font-size: 15px !important;
+    }
+    .tc span {
+        font-size: 15px !important;
+    }
+}

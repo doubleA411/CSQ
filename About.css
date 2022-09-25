@@ -37,13 +37,13 @@
     }
     .card{
         width: 150px !important;
-        height: 300px;
+        height: 300px !important;
     }
     .np{
-        margin-left: 10% !important;
+        margin-left: 30% !important;
     }
     .shari {
-        margin-left: 30% !important;
+        margin-left: 10% !important;
     }
     .chuck {
         margin-left: 10% !important;
@@ -57,18 +57,18 @@
     
 }
 
-@media screen and (max-width:1600px) {
+@media screen and (min-width:1600px) {
     .np{
-        margin-left: 400px !important;
+        margin-left: 600px !important;
     }
     .shari{
-        margin-left: 100px !important;
+        margin-left: 300px !important;
     }
     .chuck {
-        margin-left: 100px !important;
+        margin-left: 300px !important;
     }
     .steph {
-        margin-left: 400px !important;
+        margin-left: 600px !important;
     }
 }
 
