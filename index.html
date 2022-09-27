@@ -24,7 +24,7 @@
     <div class="bg">
       <!-- video -->
       <video autoplay loop muted plays-inline class="background-video">
-        <source src="img/file.mp4" type="video/mp4">
+        <source src="img/file.mp4" type="video/mp4" />
       </video>
       <nav class="header">
         <div class="mid">
@@ -37,7 +37,7 @@
           </div>
           <div class="menu" id="menu">
             <ul>
-              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html" style="color: grey;">Home</a></li>
               <li><a href="About.html">About</a></li>
               <li><a href="our_model.html">Our Model</a></li>
               <li><a href="our_process.html">Our Process</a></li>
@@ -51,7 +51,7 @@
 
       <div class="mid1">
         <div class="text">
-          <span class="main_titles" style="font-weight: 500; font-size: 45px !important;"
+          <span class="main_titles" style="font-weight: 500; font-size: 45px"
             >TURNKEY BIOLOGIC & REGENERATIVE <br />
             MEDICINE SOLUTIONS</span
           >
@@ -61,8 +61,20 @@
             regenerative medicine practice.
           </p>
         </div>
-        <br><br>
-        <div class="overlay"></div>
+        <br /><br />
+        <div
+          class="overlay"
+          style="
+            position: absolute;
+            z-index: -1;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+            background-image: linear-gradient(#0000010c 0%, black 60%);
+          "
+        ></div>
       </div>
     </div>
     <div class="mid2">
@@ -138,7 +150,7 @@
             promote the body's <br />
             natural healing response.
           </p>
-          <br>
+          <br />
           <button>
             <div class="b1"><a href="joint_injection.html">Read more</a></div>
             <div class="b2"><i class="fa-solid fa-arrow-right"></i></div>
@@ -207,7 +219,7 @@
         <img src="images/orgasm.jpg" alt="" />
       </div>
       <div class="right">
-        <div class="sex" style="margin-left: 20%">
+        <div class="sex">
           <span style="font-weight: 400"
             >SEXUAL <br />
             WELLNESS</span
@@ -267,7 +279,7 @@
         <img src="images/eq.jpg" alt="" />
       </div>
       <div class="right">
-        <div class="eq" style="margin-left: 20%">
+        <div class="eq">
           <span style="font-weight: 400">EQUIPMENT</span>
           <p>
             Through our subsidiary, Medical Device <br />

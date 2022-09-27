@@ -50,6 +50,7 @@ body {
     align-items: center;
     position: fixed;
     transition: transform .9s;
+    background-color: white;
 }
 
 .nav--hidden {
@@ -127,16 +128,7 @@ body {
 
 }
 
-.mid1 .overlay {
-    position: absolute;
-    z-index: -1;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 40%;
-    overflow: hidden;
-    background-image: linear-gradient(#0000010c 30%, black 90%);
-}
+
 
 .mid1 .text {
     width: 100%;
@@ -217,6 +209,7 @@ body {
 .mid2 .right img {
     width: 100%;
     margin-bottom: 20%;
+    margin-top: -8rem;
 }
 
 /* mid3 */
@@ -224,11 +217,13 @@ body {
 .mid3 {
     width: 100%;
     height: 250px;
+    position: relative;
+    z-index: -1;
 }
 
 .mid3 .ser {
     width: 25%;
-    height: 100%;
+    height: 300px;
     float: left;
     position: relative;
 
@@ -258,7 +253,7 @@ body {
     width: 25%;
     display: block;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -266,7 +261,7 @@ body {
 .mid3 .ser h6 {
     display: block;
     position: absolute;
-    top: 85%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-weight: bold;
@@ -336,6 +331,7 @@ body {
     margin-top: 20px;
     display: block;
     line-height: 1.8;
+    font-size: unset;
 }
 
 .mid5 .right {
@@ -390,12 +386,14 @@ body {
 
 .mid6 {
     width: 100%;
+    margin-top: 10rem;
 }
 
 .mid6 .left {
     width: 50%;
     height: 100%;
     float: left;
+    margin-top: 4rem;
 }
 
 .mid6 .left img {
@@ -407,6 +405,7 @@ body {
     width: 50%;
     height: 100%;
     float: right;
+    margin-top: 4rem;
 }
 
 .mid6 .right .care {
@@ -429,6 +428,7 @@ body {
     margin-top: 20px;
     display: block;
     line-height: 1.8;
+    font-size: unset;
 }
 .mid6 .right .care button{
     width: 150px;
@@ -468,6 +468,7 @@ body {
 .mid7 .left {
     width: 50%;
     float: left;
+    margin-top: 14rem;
 }
 
 .mid7 .left .heal {
@@ -489,6 +490,7 @@ body {
     margin-top: 20px;
     display: block;
     line-height: 1.8;
+    font-size: unset;
 }
 
 .mid7 .right {
@@ -500,6 +502,7 @@ body {
 .mid7 .right img {
     width: 90%;
     height: auto;
+    margin-top: 14rem;
 }
 
 .mid7 .left .heal button{
@@ -536,6 +539,7 @@ body {
     width: 100%;
     height: 750px;
     overflow: hidden;
+    margin-top: 14rem;
 }
 
 .mid8 .left {
@@ -573,6 +577,7 @@ body {
     margin-top: 20px;
     display: block;
     line-height: 1.8;
+    font-size: unset;
 }
 
 .mid8 .right .sex .italy {
@@ -639,6 +644,7 @@ body {
     margin-top: 20px;
     display: block;
     line-height: 1.8;
+    font-size: unset;
 }
 
 .mid9 .right {
@@ -649,6 +655,7 @@ body {
 .mid9 .right img {
     width: 90%;
     height: auto;
+    margin-left: 30px;
 }
 
 .mid9 .left button{
@@ -683,7 +690,7 @@ body {
 
 .mid10 {
     width: 100%;
-    height: 420px;
+    height: 600px;
     overflow: hidden;
 }
 
@@ -693,7 +700,8 @@ body {
 }
 
 .mid10 .left img {
-    width: 80%;
+    width: 781px;
+    height: 675px;
 }
 
 .mid10 .right {
@@ -833,7 +841,7 @@ body {
     float: right;
 }
 .mid12 .right img {
-    width: 80%;
+    width: 600px;
     margin-left: 10%;
 }
 
@@ -901,7 +909,7 @@ body {
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 450px) {
     .main_titles {
         font-size: 24px !important;
 
@@ -909,10 +917,12 @@ body {
 }
 
 
-@media screen and (min-width: 450px) {
-    .main_titles {
-        font-size: 64px !important;
 
+
+@media screen and (max-width: 800px) {
+    .mid10 .left img {
+        height: 300px !important;
+        width: 400px;
     }
 }
 
@@ -1086,6 +1096,7 @@ body {
     background-position: center;
     margin: 100px 0px;
     position: relative;
+    z-index: -1;
     
 }
 .mid15 .map{
@@ -1131,6 +1142,7 @@ body {
     color: white;
     font-size: 18px;
     padding: 5px 10px;
+    text-decoration: none;
 }
 .mid15 .map button:hover{
     background: white;
@@ -1155,15 +1167,18 @@ body {
 }
 .mid16 .left .oao{
     width: 60%;
-    margin: 10% auto;
+    margin: 1rem auto;
 }
 .mid16 .left .oao p{
-    letter-spacing: 2;
-    margin-bottom: 30px;
-    font-weight: bold;
+    margin-bottom: 90px;
+    margin-top: 4rem;
+    letter-spacing: 0.35em;
+    font-weight: 600;
+    font-size: x-large;
 }
+
 .mid16 .left table tr td {
-    padding-bottom: 20px;
+    padding-bottom: 50px;
 } 
 .mid16 .right{
     width: 50%;
@@ -1171,14 +1186,20 @@ body {
 }
 .mid16 .right .sub{
     width: 50%;
-    margin: 10% auto;
+    /* margin: 10% auto; */
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: auto; */
+    padding-top: 180px;
+    font-weight: 300;
 }
 .mid16 .right .sub p{
     font-size: 24px;
-    margin-bottom: 10px;
+    margin-bottom: 60px;
 }
 .mid16 .right .sub span{
     display:block;
+    padding-bottom: 30px;
 }
 .mid16 .right .sub input{
     display: inline;
@@ -1225,7 +1246,6 @@ body {
 
 .footer .left{
     width: 50%;
-    float: left;
 }
 .footer .left .ft{
     height: 100%;
@@ -1234,14 +1254,16 @@ body {
 }
 .footer .left a{
     color: black;
-    line-height: 2;
+    line-height: 4;
 }
 
 
 .footer .right {
     width: 50%;
     float: right;
+    padding-bottom: 1.5rem;
 } 
+
 .footer .right .link{
     width: 30%;
     float: right;
@@ -1305,6 +1327,19 @@ img {vertical-align: middle;}
   to {opacity: 1}
 }
 
+
+@media screen and (max-width:1600px) {
+    .mid1 .overlay {
+            position: absolute ;
+            z-index: -1;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 300px !important;
+            overflow: hidden;
+            background-image: linear-gradient(#0000010c 0%, black 60%);
+        }
+}
 
 @media (max-width: 640px) {
   .header .mid  .logo img {
@@ -1425,7 +1460,7 @@ img {vertical-align: middle;}
 }
     .mid5 {
     width: 100%;
-    height: 600px;
+    height: 800px;
 }
     .mid5 .left {
     width: 100%;
@@ -1487,10 +1522,11 @@ img {vertical-align: middle;}
 }
     .mid12 {
     width: 100%;
-    height: 700px;
+    height: 900px;
     overflow: hidden;
     background: black;
 }
+
     .mid12 .left {
     width: 100%;
 }
@@ -1498,6 +1534,11 @@ img {vertical-align: middle;}
     width: 100%;
     text-align: center;
 }
+
+    .mid12 .right img{
+        margin: 0;
+        width: 100%;
+    }
     .mid13 {
     width: 100%;
     height: 1000px;
@@ -1518,6 +1559,7 @@ img {vertical-align: middle;}
     .mid14 .left {
     width: 100%;
     height: 290px;
+
 }
     .mid14 .right {
     width: 100%;
@@ -1575,21 +1617,27 @@ img {vertical-align: middle;}
     .mid14 {
         width: 100%;
         height: 750px;
+        margin-left: 0px;
 
     }
         .mid14 .left {
         width: 57%;
         height: 50%;
         position: relative;
+        margin-left: 30px;
     }
         .mid14 .right {
         /* margin-left: 50%; */
         align-items: center;
         width: 100%;
         height: 50%;
-        position: static;
-        
+        position: static; 
     }
+
+    .mid14 .right .grn{
+        margin-left: 80px;
+    }
+
     .mid15 {
         width: 100%;
         height: 750px;
