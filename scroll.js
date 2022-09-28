@@ -29,3 +29,7 @@ function show() {
           observer.observe(elements[i]);  
         }
       });
+
+
+
+      
