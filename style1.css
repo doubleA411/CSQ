@@ -50,7 +50,16 @@ body {
     align-items: center;
     position: fixed;
     transition: transform .9s;
+    /* background: transparent; */
+     
     background-color: white;
+}
+
+.ogbgw{
+    background: white;
+}
+.ogbgt{
+    background: transparent;
 }
 
 .nav--hidden {
@@ -175,7 +184,7 @@ body {
     color: white;
     padding-left: 10%;
     margin-left: 30%;
-    border-left: 1px solid white;
+    /* border-left: 1px solid white; */
 }
 
 .mid2 .left .do span {
@@ -282,7 +291,7 @@ body {
     padding-left: 5%;
     margin-left: 14%;
     margin-top: 100px;
-    border-left: 1px solid black;
+    /* border-left: 1px solid black; */
 }
 
 .mid4 .solution span {
@@ -817,7 +826,8 @@ body {
     overflow: inherit;
     height: 430px;
     padding-left: 30px;
-    border-left: 1px solid white;
+    /* border-left: 1px solid white;
+     */
 }
 
 /* mid12 */
@@ -849,7 +859,7 @@ body {
     width: 60%;
     height: 72%;
     margin-left: 30%;
-    border-left: 1px solid white;
+    /* border-left: 1px solid white; */
     margin-top: 10%;
     padding-left: 30px;
 }
@@ -895,7 +905,7 @@ body {
     width: 60%;
     height: 72%;
     margin-left: 30%;
-    border-left: 1px solid white;
+    /* border-left: 1px solid white; */
     margin-top: 10%;
     padding-left: 30px;
 }
@@ -1676,7 +1686,7 @@ img {vertical-align: middle;}
     
     bottom:30%;
     right: 0%;
-	height: 1px;
+	height: 5px;
 	position: absolute;
     overflow: hidden;
     width:400px;
@@ -1690,36 +1700,333 @@ img {vertical-align: middle;}
   .hscroll-line::after {
     
     position: absolute;
-    top: 30%;
+    /* top: 0%; */
     left: 0;
     right: 0;
-    bottom: 30%;
+    bottom: 0%;
     content: ""
   }
   
   .hscroll-line:before {
       background: whitesmoke;
+      height: 1px;
   }
   
   .hscroll-line::after {
     width: 30%;
-      background: red;
-      animation: move 3s alternate-reverse;
+    height: 5px;
+    
+      background: white;
+      animation: move 2s alternate-reverse;
   }
   
   @keyframes move {
       0% {
-          transform: translate3d(-200%, 0, 0)
+          transform: translate3d(0%, 0, 0)
       }
-      60% {
-          transform: translate3d(100%, 0, 0)
+      50% {
+          transform: translate3d(50%, 0, 0)
       }
-      100% {
-          transform: translate3d(100%, 0, 0)
+        100% {
+            transform: translate3d(100%, 0, 0)
+        }
+  }
+
+@media screen and  (min-width : 1600px){
+    .mag .hscroll-line {
+    
+        bottom:30%;
+        right: 0%;
+        height: 5px;
+        position: absolute;
+        overflow: hidden;
+        width:200px !important;
+        transform: rotate(90deg);
+        
+       
       }
+    .mid11 .section{
+        /* width:20%; */
+      margin-top: -50px !important;
+      margin-left: 150px !important;
+        height:400px;
+        position:absolute;
+      
+      }
+      .mid12 .section{
+        /* width:20%; */
+      margin-top: -130px !important;
+      margin-left: 80px !important;
+        height:400px;
+        position:absolute;
+      
+      }
+
+      .mid13 .section{
+        /* width:20%; */
+      margin-top: -160px !important;
+      margin-left: 60px !important;
+        height:400px;
+        position:absolute;
+      
+      }
+
+      
+      .mid11 .hscroll-line {
+        
+        bottom:30%;
+        right: 0%;
+        height: 5px;
+        position: absolute;
+        overflow: hidden;
+        width:400px;
+        transform: rotate(90deg);
+        
+       
+      }
+      
+      
+      .mid11 .hscroll-line::before,
+      .mid11 .hscroll-line::after {
+        
+        position: absolute;
+        /* top: 0%; */
+        left: 0;
+        right: 0;
+        bottom: 0%;
+        content: ""
+      }
+      
+      .mid11 .hscroll-line:before {
+          background: whitesmoke;
+          height: 1px;
+      }
+      
+      .mid11 .hscroll-line::after {
+        width: 30%;
+        height: 5px;
+        
+          background: white;
+          animation: move 2s alternate-reverse;
+      }
+      
+      @keyframes move {
+          0% {
+              transform: translate3d(0%, 0, 0)
+          }
+          50% {
+              transform: translate3d(50%, 0, 0)
+          }
+            100% {
+                transform: translate3d(100%, 0, 0)
+            }
+      }
+}
+
+  .section-b{
+    /* width:20%; */
+  
+    height:400px;
+    position:absolute;
+  
+  }
+  
+  .hscroll-line-b {
+    
+    bottom:30%;
+    right: 0%;
+	height: 5px;
+	position: absolute;
+    overflow: hidden;
+    width:400px;
+    transform: rotate(90deg);
+    
+   
+  }
+  
+  
+  .hscroll-line-b::before,
+  .hscroll-line-b::after {
+    
+    position: absolute;
+    /* top: 0%; */
+    left: 0;
+    right: 0;
+    bottom: 0%;
+    content: ""
+  }
+  
+  .hscroll-line-b:before {
+      background: black;
+      height: 1px;
+  }
+  
+  .hscroll-line-b::after {
+    width: 30%;
+    height: 5px;
+    
+      background: black;
+      animation: move 2s alternate-reverse;
+  }
+  
+
+
+
+  @keyframes move {
+      0% {
+          transform: translate3d(0%, 0, 0)
+      }
+      50% {
+          transform: translate3d(50%, 0, 0)
+      }
+        100% {
+            transform: translate3d(100%, 0, 0)
+        }
   }
 
 
+
+
+
+  .mag .hscroll-line {
+    
+    bottom:30%;
+    right: 0%;
+    height: 5px;
+    position: absolute;
+    overflow: hidden;
+    width:200px !important;
+    transform: rotate(90deg);
+    
+   
+  }
+
+  .mag .section{
+    /* width:20%; */
+  margin-top: -60px !important;
+  margin-left: -50px !important;
+    height:400px;
+    position:absolute;
+  
+  }
+
+
+
+
+
+  @media screen and (min-width : 1600px){
+
+    .mod .section-b{
+        /* width:20%; */
+      margin-top: -110px !important;
+      margin-left: -10% !important;
+        height:400px;
+        position:absolute;
+      
+      }
+      .mod1 .section{
+        /* width:20%; */
+      margin-top: -110px !important;
+      margin-left: -35px !important;
+        height:400px;
+        position:absolute;
+      
+      }
+
+
+      .pro .section-b{
+        /* width:20%; */
+      margin-top: -70px !important;
+      margin-left: -30px !important;
+        height:400px;
+        position:absolute;
+      
+      }
+      .pro1 .section{
+        /* width:20%; */
+      margin-top: -50px !important;
+      margin-left: -35px !important;
+        height:400px;
+        position:absolute;
+      
+      }
+
+
+      .mag .section{
+        /* width:20%; */
+      margin-top: -100px !important;
+      margin-left: -150px !important;
+        height:400px;
+        position:absolute;
+      
+      }
+
+    .abt .section-b{
+        /* width:20%; */
+      margin-top: 170px !important;
+      margin-left: 20px !important;
+        height:40px;
+        position:absolute;
+      
+      }
+
+
+    .mid2 .section{
+        /* width:20%; */
+      margin-top: 10px ;
+      margin-left: 25% !important;
+        height:400px;
+        position:absolute;
+      
+      }
+
+    .mid4 .section-b{
+        /* width:20%; */
+        margin-left: 3% !important;
+        margin-top: -100px !important;
+        height:400px;
+        position:absolute;
+      
+      }
+      
+      .mid4 .hscroll-line-b {
+        
+        bottom:40%;
+        right: 30%;
+        height: 5px;
+        position: absolute;
+        overflow: hidden;
+        width:300px;
+        transform: rotate(90deg);
+        
+       
+      }
+      
+      
+      .mid4 .hscroll-line-b::before,
+      .mid4 .hscroll-line-b::after {
+        
+        position: absolute;
+        /* top: 0%; */
+        left: 0;
+        right: 0;
+        bottom: 0%;
+        content: ""
+      }
+      
+      .mid4 .hscroll-line-b:before {
+          background: black;
+          height: 1px;
+      }
+      
+      .mid4 .hscroll-line-b::after {
+        width: 30%;
+        height: 5px;
+        
+        background: black;
+        animation: move 2s alternate-reverse;
+      }
+  }
 
 
 

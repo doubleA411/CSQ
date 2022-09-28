@@ -21,6 +21,7 @@
 
   <body>
     <script src="scroll.js"></script>
+  
     <div class="bg">
       <!-- video -->
       <video autoplay loop muted plays-inline class="background-video">
@@ -79,6 +80,9 @@
     </div>
     <div class="mid2">
       <div class="left">
+        <div class="section" style="margin-left: 29%; margin-top: -25px;">
+          <span class="hscroll-line"></span>
+        </div>
         <div class="do">
           <span style="font-weight: 400; color: white">What we do</span>
           <h6 style="font-weight: 400">
@@ -126,6 +130,9 @@
 
     <div class="mid4">
       <div class="solution">
+        <div class="section-b" style="margin-left: 5%; margin-top: -123px;">
+          <span class="hscroll-line-b" style="width: 194px;"></span>
+        </div>
         <span>SOLUTIONS</span>
         <h6 style="font-weight: 400">
           We Deliver Exceptional <br />
@@ -301,6 +308,9 @@
     <div class="mid11">
       <div class="why">
         <div class="bar">
+          <div class="section" style="margin-left: 10%; margin-top: -30px;">
+            <span class="hscroll-line" style="width: 395px;"></span>
+          </div>
           <p>WHY CSQ BIO™</p>
           <h4 style="font-weight: 400">
             A different approach to <br />
@@ -332,6 +342,9 @@
       <div class="left">
         <div class="who">
           <div class="bar">
+            <div class="section" style="margin-left: 5%; margin-top: -131px;">
+              <span class="hscroll-line" style="width: 252px;"></span>
+            </div>
             <p>WHO WE WORK WITH</p>
             <span style="font-weight: 400"
               >Customized solutions <br />
@@ -357,6 +370,9 @@
       <div class="left">
         <div class="who">
           <div class="bar">
+            <div class="section" style="margin-left: 5%; margin-top: -154px;">
+              <span class="hscroll-line" style="width: 213px;"></span>
+            </div>
             <p>EVENTS</p>
             <span style="font-weight: 400"
               >We would love to meet <br />
@@ -642,6 +658,7 @@
 
         window.addEventListener("scroll", () => {
           if (lastsceorllY < window.scrollY) {
+            
             nav.classList.add("nav--hidden");
           } else {
             nav.classList.remove("nav--hidden");
@@ -659,11 +676,35 @@
         window.addEventListener("scroll", () => {
           if (lastsceorllY > window.scrollY) {
             nav.classList.remove("bgcolor");
+            console.log(window.screenY);
+            
           } else {
             nav.classList.add("bgcolor");
+
           }
 
           lastsceorllY = window.scrollY;
+        });
+      }
+    </script>
+      
+    <script>
+      {
+        const nav = document.querySelector(".header");
+        let lastsceorllY = window.scrollY;
+
+        window.addEventListener("scroll", () => {
+          if (window.scrollY) {
+            nav.classList.add("ogbgw")
+            nav.classList.remove("ogbgt")
+            
+          } else {
+            nav.classList.remove("ogbgw")
+            nav.classList.add("ogbgt")
+
+          }
+
+          
         });
       }
     </script>
