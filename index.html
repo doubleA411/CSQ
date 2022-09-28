@@ -306,6 +306,7 @@
       </div>
     </div>
     <div class="mid11">
+     
       <div class="why">
         <div class="bar">
           <div class="section" style="margin-left: 10%; margin-top: -30px;">
@@ -707,6 +708,52 @@
           
         });
       }
+    </script>
+      <script>
+       
+  var winScrollTop = 0;
+
+//utility - check if element is in view
+$.fn.is_on_screen = function () {
+	var win = $(window);
+	var viewport = {
+		top: win.scrollTop(),
+		left: win.scrollLeft()
+	};
+	//viewport.right = viewport.left + win.width();
+	viewport.bottom = viewport.top + win.height();
+
+	var bounds = this.offset();
+	//bounds.right = bounds.left + this.outerWidth();
+	bounds.bottom = bounds.top + this.outerHeight();
+
+	return !(viewport.bottom < bounds.top || viewport.top > bounds.bottom);
+};
+
+function parallax() {
+	var scrolled = $(window).scrollTop();
+	$(".parallax").each(function () {
+		if ($(this).is_on_screen()) {
+			var firstTop = $(this).offset().top;
+			var moveTop = (firstTop - winScrollTop) * $(this).attr("data-speed");
+			$(this).css("transform", "translateY(" + -Math.min(0, moveTop) + "px)");
+		}
+	});
+}
+
+$(window).scroll(function () {
+	winScrollTop = $(this).scrollTop();
+	parallax();
+});
+
+//change zindex on hover - not really necessary but its just nice to have
+$(".parallax").on("mouseover", function () {
+	$(this).css("z-index", "99");
+});
+$(".parallax").on("mouseout", function () {
+	$(this).css("z-index", "initial");
+});
+
     </script>
   </body>
 </html>

@@ -40,7 +40,18 @@ body {
     padding-top: var (--nav-height);
 }
 
+.parallax {
+     height: 700px;
+    width: 100%;  
+    will-change: transform;
+    background-size: cover;
+    background-attachment: fixed;
+}
 
+/* .parallax img {
+    width: 100%;
+    display: block;
+} */
 
 .header {
     width: 100%;

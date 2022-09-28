@@ -217,7 +217,7 @@
     <br>
     <br>
     <div class="container-fluid" style="padding: 0px 10%;">
-        <div class="col-lg-12" style="position: relative;" >
+        <div class="col-lg-12" >
             <span class="clients">
                 <span style="letter-spacing:0.03em;">
                     <p>What Our Clients are Saying</p>
@@ -489,8 +489,11 @@
 
     <br>
     <br>
-    <div class="parallax">
-    </div>
+    <br><br><br>
+   
+   <div class="parallax" data-speed=".5" style="position: relative; z-index:-1">
+    <img src="img/about.jpg" alt="">
+   </div>
     <div class="container-fluid" style="background-color: black;  ">
         <div class="row mag" style="margin-left: 220px">
             <div class="col-lg-1">
@@ -634,27 +637,49 @@
     </script>
     <script>
        
-        $(window).scroll(function(){
+  var winScrollTop = 0;
 
-  	// Add parallax scrolling to all images in .paralax-image container
-		  $('.parallax').each(function(){
-		    // only put top value if the window scroll has gone beyond the top of the image
-				    if ($(this).offset().top < $(window).scrollTop()) {
-      			// Get ammount of pixels the image is above the top of the window
-      			var difference = $(window).scrollTop() - $(this).offset().top;
-			      // Top value of image is set to half the amount scrolled
-			      // (this gives the illusion of the image scrolling slower than the rest of the page)
-			      var half = (difference / 2) + 'px',
-                transform = 'translate3d( 0, ' + half + ',0)';
+//utility - check if element is in view
+$.fn.is_on_screen = function () {
+	var win = $(window);
+	var viewport = {
+		top: win.scrollTop(),
+		left: win.scrollLeft()
+	};
+	//viewport.right = viewport.left + win.width();
+	viewport.bottom = viewport.top + win.height();
 
-			      $(this).find('img').css('transform', transform);
-    		} else {
-			      // if image is below the top of the window set top to 0
-      			$(this).find('img').css('transform', 'translate3d(0,0,0)');
-		    }
-		  });
+	var bounds = this.offset();
+	//bounds.right = bounds.left + this.outerWidth();
+	bounds.bottom = bounds.top + this.outerHeight();
+
+	return !(viewport.bottom < bounds.top || viewport.top > bounds.bottom);
+};
+
+function parallax() {
+	var scrolled = $(window).scrollTop();
+	$(".parallax").each(function () {
+		if ($(this).is_on_screen()) {
+			var firstTop = $(this).offset().top;
+			var moveTop = (firstTop - winScrollTop) * $(this).attr("data-speed");
+			$(this).css("transform", "translateY(" + -Math.min(0, moveTop) + "px)");
+		}
+	});
+}
+
+$(window).scroll(function () {
+	winScrollTop = $(this).scrollTop();
+	parallax();
 });
-         
+
+//change zindex on hover - not really necessary but its just nice to have
+$(".parallax").on("mouseover", function () {
+	$(this).css("z-index", "99");
+});
+$(".parallax").on("mouseout", function () {
+	$(this).css("z-index", "initial");
+});
+
     </script>
 </body>
 

@@ -251,13 +251,28 @@ hr.vertical {
 
 
 
-.parallax {
+/* .parallax {
     width: 100%;
     height: 750px;
     background: url('img/about.jpg');
-    background-size: 100% 100%;
+    background-size: cover;
     background-attachment:fixed;
+    
+} */
+.parallax {
+    height: 900;
+    width: 100%;
+    will-change: transform;
+    background-size: cover;
+    background-attachment: fixed;
 }
+
+.parallax img {
+    
+	width: 100%;
+	display: flex;
+}
+
 
 hr.verti {
     border: 0;
