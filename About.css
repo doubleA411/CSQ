@@ -202,7 +202,7 @@ hr.vertical {
 @media screen and (min-width:640px) {
     .t1 {
         margin-left : 2%;
-        margin-top:10%;
+        /* margin-top:10%; */
     }
 }
 
@@ -216,7 +216,7 @@ hr.vertical {
 @media screen and (min-width:640px) {
     .a1 {
         margin-left: 7%;
-        margin-top: 5%;
+        /* margin-top: 5%; */
     }
 }
 
@@ -253,25 +253,28 @@ hr.vertical {
 
 /* .parallax {
     width: 100%;
-    height: 750px;
+    height: 600px;
     background: url('img/about.jpg');
-    background-size: cover;
-    background-attachment:fixed;
-    
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    position: relative;
+    z-index: -1;
 } */
 .parallax {
-    height: 900;
-    width: 100%;
-    will-change: transform;
-    background-size: cover;
+    /* The image used */
+    background: url('img/about.jpg');
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
     background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.parallax img {
-    
-	width: 100%;
-	display: flex;
-}
+
 
 
 hr.verti {

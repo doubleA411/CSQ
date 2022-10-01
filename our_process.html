@@ -39,44 +39,6 @@
 
 
     </script>
-
-
- <script>
-
-
-
-
-      {
-        const nav = document.querySelector(".header");
-        let lastsceorllY = window.scrollY;
-
-        window.addEventListener("scroll", () => {
-          if (lastsceorllY < window.scrollY) {
-            nav.classList.add("nav--hidden");
-          } else {
-            nav.classList.remove("nav--hidden");
-          }
-
-          lastsceorllY = window.scrollY;
-        });
-      }
-    </script>
-    <script>
-      {
-        const nav = document.querySelector(".header");
-        let lastsceorllY = window.scrollY;
-
-        window.addEventListener("scroll", () => {
-          if (lastsceorllY > window.scrollY) {
-            nav.classList.remove("bgcolor");
-          } else {
-            nav.classList.add("bgcolor");
-          }
-
-          lastsceorllY = window.scrollY;
-        });
-      }
-    </script>
    <script src="scroll.js"></script>
 
     <nav class="header">
@@ -125,7 +87,7 @@
  
 
 <div class="container-fluid" style=" padding: 50px 20px 50px 15%;">
-  <div class="row pro">
+  <div class="row pro" >
     <div class="col-lg-1 section-b">
           
       <span class="hscroll-line-b"></span>
@@ -149,7 +111,7 @@
 
 
     <br><br><br>
-<div class="container-fluid black_process"  id="block" style=" padding: 50px 15% 50px 15%; background-color: black;">
+<div class="container-fluid black_process"  id="block" style=" padding: 50px 15% 50px 15%; background-color: black; z-index: 1; position: relative; ">
   <div class="text-start">
     <div class="col">
       <br>
@@ -174,7 +136,7 @@
       </div>
       <br><br><br><br><br><br><br>
 
-      <div class="container-fluid cards" style=" z-index: -1; padding-right: 70px;" >
+      <div class="container-fluid cards" style=" padding-right: 70px; "  >
         <center>
           <div class="row">
             <div class=" col-lg-4" ><div class="card" style="width: 130%;height: 503px; color: white; border-radius: 30px;">
@@ -308,6 +270,45 @@
       </div>
   </div>
 </div>
+<script>
+      {
+        const menu = document.querySelector(".menu");
+        const nav = document.querySelector(".header");
+        let lastsceorllY = window.scrollY;
+
+        window.addEventListener("scroll", () => {
+          if (lastsceorllY < window.scrollY) {
+            nav.classList.add("nav--hidden");
+            menu.classList.add("nav--hidden");
+          } else {
+            nav.classList.remove("nav--hidden");
+            menu.classList.remove("nav--hidden");
+
+          }
+
+          lastsceorllY = window.scrollY;
+        });
+      }
+    </script>
+    <script>
+        const ham = document.querySelector("checkbtn")
+    </script>
+    <script>
+      {
+        const nav = document.querySelector(".header");
+        let lastsceorllY = window.scrollY;
+
+        window.addEventListener("scroll", () => {
+          if (lastsceorllY > window.scrollY) {
+            nav.classList.remove("bgcolor");
+          } else {
+            nav.classList.add("bgcolor");
+          }
+
+          lastsceorllY = window.scrollY;
+        });
+      }
+    </script>
 </body>
 </html>
 
