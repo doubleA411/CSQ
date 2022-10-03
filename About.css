@@ -260,7 +260,7 @@ hr.vertical {
     position: relative;
     z-index: -1;
 } */
-.parallax {
+.parallaxabt {
     /* The image used */
     background: url('img/about.jpg');
 
@@ -269,9 +269,10 @@ hr.vertical {
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    
 }
 
 
