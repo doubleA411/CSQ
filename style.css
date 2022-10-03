@@ -302,3 +302,16 @@ h5 {
         font-size: 15px !important;
     }
 }
+
+
+.content {
+        width: 100%;
+        max-width: 1920px;
+        min-width: 390px;
+        overflow: hidden;
+}
+
+/* body , html {
+    max-width: 1600px;
+    margin: 0 auto;
+} */

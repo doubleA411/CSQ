@@ -1934,11 +1934,18 @@ img {vertical-align: middle;}
   margin-top: -60px !important;
   margin-left: -50px !important;
     height:400px;
-    position:absolute;
+    position:relative;
   
   }
 
+ .abt .section-b {
+     /* width:20%; */
+     margin-top: 170px !important;
+     margin-left: 20px !important;
+     height: 40px;
+     position: relative;
 
+ }
 
 
 
@@ -1949,16 +1956,35 @@ img {vertical-align: middle;}
       margin-top: -110px !important;
       margin-left: -10% !important;
         height:400px;
-        position:absolute;
+        position:relative;
       
       }
+
+      .mod .section-b .hscroll-line-b {
+        bottom: 30%;
+        right: -37%;
+        height: 5px;
+        position: absolute;
+        overflow: hidden;
+        width: 400px;
+        transform: rotate(90deg);
+    }
       .mod1 .section{
         /* width:20%; */
       margin-top: -110px !important;
       margin-left: -35px !important;
         height:400px;
-        position:absolute;
+        position:relative;
       
+      }
+      .mod1 .section .hscroll-line {
+            bottom: 30%;
+                right: -85%;
+                height: 5px;
+                position: absolute;
+                overflow: hidden;
+                width: 400px;
+                transform: rotate(90deg);
       }
 
 
@@ -1967,17 +1993,38 @@ img {vertical-align: middle;}
       margin-top: -70px !important;
       margin-left: -30px !important;
         height:400px;
-        position:absolute;
+        position:relative;
       
       }
+
+      .pro .section-b .scroll-line-b {
+        bottom: 30%;
+        right: -35%;
+        height: 5px;
+        position: absolute;
+        overflow: hidden;
+        width: 400px;
+        transform: rotate(90deg);
+    }
+
       .pro1 .section{
         /* width:20%; */
       margin-top: -50px !important;
       margin-left: -35px !important;
         height:400px;
-        position:absolute;
+        position:relative;
       
       }
+
+           .pro1 .section .scroll-line-b {
+               bottom: 30%;
+               right: -120%;
+               height: 5px;
+               position: absolute;
+               overflow: hidden;
+               width: 400px;
+               transform: rotate(90deg);
+           }
 
 
       .mag .section{
@@ -1985,7 +2032,7 @@ img {vertical-align: middle;}
       margin-top: -100px !important;
       margin-left: -150px !important;
         height:400px;
-        position:absolute;
+        position:relative;
       
       }
 
@@ -1994,9 +2041,19 @@ img {vertical-align: middle;}
       margin-top: 170px !important;
       margin-left: 20px !important;
         height:40px;
-        position:absolute;
+        position:relative;
       
       }
+
+      .abt .section-b .hscroll-line-b {
+        bottom: 30%;
+        right: -42%;
+        height: 5px;
+        position: absolute;
+        overflow: hidden;
+        width: 400px;
+        transform: rotate(90deg);
+    }
 
 
     .mid2 .section{
@@ -2072,7 +2129,13 @@ img {vertical-align: middle;}
 
 
 
-
+ .content {
+     width: 100%;
+     max-width: 1920px;
+     min-width: 390px;
+     overflow: hidden;
+     margin: 0 auto;
+ }
 
 
 
